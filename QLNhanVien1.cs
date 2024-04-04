@@ -130,9 +130,9 @@ namespace BTL_WINFORM_2024
                 label_salary.Text = selectedRow.Cells["fHSL"].Value.ToString();
                 DateTime start_date = (DateTime)selectedRow.Cells["dNgayVaoLam"].Value;
                 label_start_date.Text = start_date.ToString("dd/MM/yyyy");
-
+                label_possition.Text = selectedRow.Cells["sChucVu"].Value.ToString().ToLower();
                 label_cccd.Text = selectedRow.Cells["sCCCD"].Value.ToString();
-            }
+            } 
         }
 
         private void click_add_new_employee(object sender, EventArgs e)
@@ -149,7 +149,7 @@ namespace BTL_WINFORM_2024
         {
 
         }
-
+        
         private void textBox_id_TextChanged(object sender, EventArgs e)
         {
             string user_id = textBox_id.Text;
@@ -179,6 +179,9 @@ namespace BTL_WINFORM_2024
                             label_salary.Text = row["fHSL"].ToString();
                             label_start_date.Text = row["dNgayVaoLam"].ToString();
                             // Thêm các thông tin khác nếu cần
+                            label_phone_number.Text = row["sSoDT"].ToString();
+                            label_cccd.Text = row["sCCCD"].ToString();
+                            label_possition.Text = row["sChucVu"].ToString().ToLower();
                         }
                         else
                         {
@@ -189,6 +192,8 @@ namespace BTL_WINFORM_2024
                             label_sex.Text = "";
                             label_salary.Text = "";
                             label_start_date.Text = "";
+                            label_phone_number.Text = "";
+                            label_cccd.Text = "";
                             // Thêm các Label khác nếu cần
                         }
                     }
@@ -202,6 +207,8 @@ namespace BTL_WINFORM_2024
                 label_sex.Text = "";
                 label_salary.Text = "";
                 label_start_date.Text = "";
+                label_phone_number.Text = "";
+                label_cccd.Text = "";
             }
         }
 
@@ -336,8 +343,32 @@ namespace BTL_WINFORM_2024
                 form_next.FormClosing += Form_next_FormClosing;
                 form_next.ShowDialog();
             }
-            else
-            {
+            else if (check_exits_employee(textBox_id.Text.ToString())) {
+                string employeeID = textBox_id.ToString();
+                label_name.Text = "";
+                label_birthday.Text = "";
+                textBox_address.Text = "";
+                label_sex.Text = "";
+                label_salary.Text = "";
+                label_start_date.Text = "";
+                label_phone_number.Text = "";
+                label_cccd.Text = "";
+
+                string name = label_name.Text.ToString();
+                string birthday = label_birthday.Text.ToString();
+                string phone = label_phone_number.Text.ToString();
+
+                string address = textBox_address.Text.ToString();
+                bool sex = label_sex.Text.ToString() == "Nam" ? true: false;
+                string salary = label_salary.Text.ToString();
+                string posittion = label_possition.Text.ToString();
+                string cccd = label_cccd.Text.ToString();
+
+                ChinhSuaThongTinNV form_next = new ChinhSuaThongTinNV(employeeID, name, birthday, address, sex, phone, salary, posittion, cccd);
+                form_next.FormClosing += Form_next_FormClosing;
+                form_next.ShowDialog();
+            }
+            else {
                 MessageBox.Show("Vui lòng chọn một nhân viên để chỉnh sửa thông tin.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }

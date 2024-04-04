@@ -261,6 +261,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Nhân Viên",
@@ -280,7 +281,7 @@
             this.label8.Location = new System.Drawing.Point(95, 471);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(126, 26);
+            this.label8.Size = new System.Drawing.Size(131, 26);
             this.label8.TabIndex = 0;
             this.label8.Text = "Số điện thoại";
             // 
@@ -325,7 +326,7 @@
             this.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximumSize = new System.Drawing.Size(590, 666);
+            this.MaximumSize = new System.Drawing.Size(583, 666);
             this.Name = "ThemNhanVienForm";
             this.Text = "Thêm mới nhân viên";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.click_exit_confirm);

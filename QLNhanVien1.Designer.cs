@@ -64,6 +64,7 @@
             this.textBox_address = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label_cccd = new System.Windows.Forms.Label();
+            this.label_possition = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_list_employee)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -229,9 +230,9 @@
             this.label16.Location = new System.Drawing.Point(204, 143);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(189, 28);
+            this.label16.Size = new System.Drawing.Size(96, 28);
             this.label16.TabIndex = 0;
-            this.label16.Text = "Thông tin nhân viên:";
+            this.label16.Text = "Thông tin";
             // 
             // label17
             // 
@@ -461,12 +462,12 @@
             // 
             this.textBox_id.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox_id.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.textBox_id.Location = new System.Drawing.Point(415, 144);
+            this.textBox_id.Location = new System.Drawing.Point(426, 147);
             this.textBox_id.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox_id.Name = "textBox_id";
             this.textBox_id.Size = new System.Drawing.Size(204, 30);
             this.textBox_id.TabIndex = 10;
-            this.textBox_id.Text = "Admin";
+            this.textBox_id.Text = "NV999";
             this.textBox_id.TextChanged += new System.EventHandler(this.textBox_id_TextChanged);
             // 
             // label20
@@ -520,6 +521,18 @@
             this.label_cccd.Text = "14J09281JD21";
             this.label_cccd.Click += new System.EventHandler(this.label_sex_Click);
             // 
+            // label_possition
+            // 
+            this.label_possition.AutoSize = true;
+            this.label_possition.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label_possition.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label_possition.Location = new System.Drawing.Point(302, 143);
+            this.label_possition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_possition.Name = "label_possition";
+            this.label_possition.Size = new System.Drawing.Size(96, 28);
+            this.label_possition.TabIndex = 0;
+            this.label_possition.Text = "nhân viên";
+            // 
             // QLNhanVien1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -557,6 +570,7 @@
             this.Controls.Add(this.label_name);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label20);
+            this.Controls.Add(this.label_possition);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -612,6 +626,7 @@
         private System.Windows.Forms.TextBox textBox_address;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label_cccd;
+        private System.Windows.Forms.Label label_possition;
     }
 }
 
