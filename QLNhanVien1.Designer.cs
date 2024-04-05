@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.label_current_time = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -86,26 +86,26 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(724, 38);
+            this.label12.Location = new System.Drawing.Point(719, 38);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(258, 28);
+            this.label12.Size = new System.Drawing.Size(254, 28);
             this.label12.TabIndex = 0;
-            this.label12.Text = "Chào, Admin  Chính Nguyễn";
+            this.label12.Text = "Chào mừng ! Chính Nguyễn";
             this.label12.Click += new System.EventHandler(this.label3_Click);
             // 
-            // label11
+            // label_current_time
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(472, 34);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(209, 37);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "3: 47 3/20/2024";
-            this.label11.Click += new System.EventHandler(this.label3_Click);
+            this.label_current_time.AutoSize = true;
+            this.label_current_time.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_current_time.ForeColor = System.Drawing.Color.White;
+            this.label_current_time.Location = new System.Drawing.Point(533, 38);
+            this.label_current_time.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_current_time.Name = "label_current_time";
+            this.label_current_time.Size = new System.Drawing.Size(152, 28);
+            this.label_current_time.TabIndex = 0;
+            this.label_current_time.Text = "3: 47 3/20/2024";
+            this.label_current_time.Click += new System.EventHandler(this.label3_Click);
             // 
             // label3
             // 
@@ -215,7 +215,7 @@
             // 
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.label_current_time);
             this.panel1.Location = new System.Drawing.Point(12, 11);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
@@ -320,7 +320,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(195)))), ((int)(((byte)(167)))));
+            this.button1.BackColor = System.Drawing.Color.White;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(234, 446);
@@ -334,7 +334,7 @@
             // 
             // button_edit_infor
             // 
-            this.button_edit_infor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(115)))), ((int)(((byte)(202)))));
+            this.button_edit_infor.BackColor = System.Drawing.Color.White;
             this.button_edit_infor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_edit_infor.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_edit_infor.ForeColor = System.Drawing.SystemColors.Desktop;
@@ -349,7 +349,7 @@
             // 
             // button_delete_employee
             // 
-            this.button_delete_employee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(76)))), ((int)(((byte)(91)))));
+            this.button_delete_employee.BackColor = System.Drawing.Color.White;
             this.button_delete_employee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_delete_employee.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_delete_employee.Location = new System.Drawing.Point(516, 446);
@@ -375,10 +375,10 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(876, 446);
+            this.button5.Location = new System.Drawing.Point(865, 446);
             this.button5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(85, 42);
+            this.button5.Size = new System.Drawing.Size(96, 42);
             this.button5.TabIndex = 9;
             this.button5.Text = "Tìm kiếm";
             this.button5.UseVisualStyleBackColor = true;
@@ -391,9 +391,9 @@
             this.label_sex.Location = new System.Drawing.Point(784, 203);
             this.label_sex.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_sex.Name = "label_sex";
-            this.label_sex.Size = new System.Drawing.Size(54, 28);
+            this.label_sex.Size = new System.Drawing.Size(79, 28);
             this.label_sex.TabIndex = 0;
-            this.label_sex.Text = "Nam";
+            this.label_sex.Text = "Trống ...";
             this.label_sex.Click += new System.EventHandler(this.label_sex_Click);
             // 
             // label_salary
@@ -404,9 +404,9 @@
             this.label_salary.Location = new System.Drawing.Point(780, 256);
             this.label_salary.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_salary.Name = "label_salary";
-            this.label_salary.Size = new System.Drawing.Size(38, 28);
+            this.label_salary.Size = new System.Drawing.Size(79, 28);
             this.label_salary.TabIndex = 0;
-            this.label_salary.Text = "4.5";
+            this.label_salary.Text = "Trống ...";
             this.label_salary.Click += new System.EventHandler(this.label_sex_Click);
             // 
             // label_phone_number
@@ -417,9 +417,9 @@
             this.label_phone_number.Location = new System.Drawing.Point(784, 314);
             this.label_phone_number.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_phone_number.Name = "label_phone_number";
-            this.label_phone_number.Size = new System.Drawing.Size(122, 28);
+            this.label_phone_number.Size = new System.Drawing.Size(79, 28);
             this.label_phone_number.TabIndex = 0;
-            this.label_phone_number.Text = "0933686062";
+            this.label_phone_number.Text = "Trống ...";
             this.label_phone_number.Click += new System.EventHandler(this.label_sex_Click);
             // 
             // label_name
@@ -430,9 +430,9 @@
             this.label_name.Location = new System.Drawing.Point(355, 204);
             this.label_name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_name.Name = "label_name";
-            this.label_name.Size = new System.Drawing.Size(136, 28);
+            this.label_name.Size = new System.Drawing.Size(79, 28);
             this.label_name.TabIndex = 0;
-            this.label_name.Text = "Nguyễn Chính";
+            this.label_name.Text = "Trống ...";
             // 
             // label_birthday
             // 
@@ -442,9 +442,9 @@
             this.label_birthday.Location = new System.Drawing.Point(355, 256);
             this.label_birthday.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_birthday.Name = "label_birthday";
-            this.label_birthday.Size = new System.Drawing.Size(116, 28);
+            this.label_birthday.Size = new System.Drawing.Size(79, 28);
             this.label_birthday.TabIndex = 0;
-            this.label_birthday.Text = "14/01/2004";
+            this.label_birthday.Text = "Trống ...";
             // 
             // label_start_date
             // 
@@ -454,9 +454,9 @@
             this.label_start_date.Location = new System.Drawing.Point(373, 373);
             this.label_start_date.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_start_date.Name = "label_start_date";
-            this.label_start_date.Size = new System.Drawing.Size(116, 28);
+            this.label_start_date.Size = new System.Drawing.Size(79, 28);
             this.label_start_date.TabIndex = 0;
-            this.label_start_date.Text = "24/10/2022";
+            this.label_start_date.Text = "Trống ...";
             // 
             // textBox_id
             // 
@@ -467,7 +467,7 @@
             this.textBox_id.Name = "textBox_id";
             this.textBox_id.Size = new System.Drawing.Size(204, 30);
             this.textBox_id.TabIndex = 10;
-            this.textBox_id.Text = "NV999";
+            this.textBox_id.Text = "NV";
             this.textBox_id.TextChanged += new System.EventHandler(this.textBox_id_TextChanged);
             // 
             // label20
@@ -493,7 +493,7 @@
             this.textBox_address.Name = "textBox_address";
             this.textBox_address.Size = new System.Drawing.Size(279, 23);
             this.textBox_address.TabIndex = 10;
-            this.textBox_address.Text = "23, Ngõ 245, Định Công, Hà Nội";
+            this.textBox_address.Text = "Trống ...";
             // 
             // label6
             // 
@@ -516,9 +516,9 @@
             this.label_cccd.Location = new System.Drawing.Point(784, 373);
             this.label_cccd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_cccd.Name = "label_cccd";
-            this.label_cccd.Size = new System.Drawing.Size(139, 28);
+            this.label_cccd.Size = new System.Drawing.Size(79, 28);
             this.label_cccd.TabIndex = 0;
-            this.label_cccd.Text = "14J09281JD21";
+            this.label_cccd.Text = "Trống ...";
             this.label_cccd.Click += new System.EventHandler(this.label_sex_Click);
             // 
             // label_possition
@@ -526,7 +526,7 @@
             this.label_possition.AutoSize = true;
             this.label_possition.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.label_possition.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label_possition.Location = new System.Drawing.Point(302, 143);
+            this.label_possition.Location = new System.Drawing.Point(292, 143);
             this.label_possition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_possition.Name = "label_possition";
             this.label_possition.Size = new System.Drawing.Size(96, 28);
@@ -594,7 +594,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label_current_time;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label13;

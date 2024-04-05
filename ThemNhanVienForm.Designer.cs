@@ -200,7 +200,7 @@
             // 
             // button_add_new
             // 
-            this.button_add_new.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(195)))), ((int)(((byte)(167)))));
+            this.button_add_new.BackColor = System.Drawing.Color.White;
             this.button_add_new.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_add_new.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_add_new.Location = new System.Drawing.Point(100, 541);
@@ -213,7 +213,7 @@
             // 
             // button_exits
             // 
-            this.button_exits.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(195)))), ((int)(((byte)(167)))));
+            this.button_exits.BackColor = System.Drawing.Color.White;
             this.button_exits.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_exits.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_exits.Location = new System.Drawing.Point(387, 541);
@@ -222,10 +222,11 @@
             this.button_exits.TabIndex = 9;
             this.button_exits.Text = "Hủy bỏ";
             this.button_exits.UseVisualStyleBackColor = false;
+            this.button_exits.Click += new System.EventHandler(this.button_exits_Click);
             // 
             // button_clear
             // 
-            this.button_clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(195)))), ((int)(((byte)(167)))));
+            this.button_clear.BackColor = System.Drawing.Color.White;
             this.button_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_clear.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_clear.Location = new System.Drawing.Point(235, 541);
@@ -234,6 +235,7 @@
             this.button_clear.TabIndex = 8;
             this.button_clear.Text = "Xóa thông tin";
             this.button_clear.UseVisualStyleBackColor = false;
+            this.button_clear.Click += new System.EventHandler(this.button_clear_Click);
             // 
             // dateTimePicker_birthday
             // 

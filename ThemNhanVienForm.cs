@@ -257,6 +257,24 @@ namespace BTL_WINFORM_2024
             }
         }
 
+        private void button_clear_Click(object sender, EventArgs e)
+        {
+            // Khi nhấn thì xóa thông tin của người dùng đã nhập
+            radioButton_male.Checked =  true;
+
+            // Lấy thông tin từ các controls trên form
+            textBox_name.Text = "";
+            textBox_address.Text  = "";
+            textBox_cccd.Text = "";
+            comboBox1.SelectedItem = 0;
+            textBox_phone.Text = "";
+        }
+
+        private void button_exits_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void AddNewEmployeeToDatabase(string employeeID, string name, int gender, string address, string cccd, DateTime birthday, string position, string phone,DateTime start_date)
         {
             // Thực hiện thêm mới nhân viên vào CSDL

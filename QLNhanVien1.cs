@@ -18,7 +18,7 @@ namespace BTL_WINFORM_2024
 {
     public partial class QLNhanVien1 : Form
     {
-        
+        private Timer timer = new Timer();
         string connectionString = ConfigurationManager.ConnectionStrings["ConnectionStringBTL"].ConnectionString;
         public QLNhanVien1()
         {
@@ -26,9 +26,19 @@ namespace BTL_WINFORM_2024
             // Thiết lập AutoCompleteSource và AutoCompleteMode cho TextBox
             textBox_id.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             textBox_id.AutoCompleteSource = AutoCompleteSource.CustomSource;
-
+            timer.Interval = 1000; // 1 giây
+            timer.Tick += Timer_Tick;
+            timer.Start(); // Bắt đầu timer
             // Gọi phương thức để cài đặt dữ liệu gợi ý
             SetAutoComplete();
+        }
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            // Lấy thời gian hiện tại
+            DateTime currentTime = DateTime.Now;
+
+            // Lấy cả giờ và day month  year 
+            label_current_time.Text = currentTime.ToString("HH:mm:ss dd/MM/yyyy");
         }
         private void SetAutoComplete()
         {
@@ -177,7 +187,8 @@ namespace BTL_WINFORM_2024
                             textBox_address.Text = row["sDiaChi"].ToString();
                             label_sex.Text = (bool)row["bGioiTinh"] ? "Nam" : "Nữ";
                             label_salary.Text = row["fHSL"].ToString();
-                            label_start_date.Text = row["dNgayVaoLam"].ToString();
+                            DateTime start_date = (DateTime)row["dNgayVaoLam"];
+                            label_start_date.Text = start_date.ToString("dd/MM/yyyy");
                             // Thêm các thông tin khác nếu cần
                             label_phone_number.Text = row["sSoDT"].ToString();
                             label_cccd.Text = row["sCCCD"].ToString();
