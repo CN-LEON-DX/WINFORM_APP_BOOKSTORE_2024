@@ -18,8 +18,10 @@ namespace BTL_WINFORM_2024
 {
     public partial class QLNhanVien1 : Form
     {
+        private DataView dv_dgv = new DataView();
         private Timer timer = new Timer();
         string connectionString = ConfigurationManager.ConnectionStrings["ConnectionStringBTL"].ConnectionString;
+        string currentID = "";
         public QLNhanVien1()
         {
             InitializeComponent();
@@ -101,6 +103,16 @@ namespace BTL_WINFORM_2024
         public void QL_Admin_Load(object sender, EventArgs e)
         {
             LoadDataTo_GridView_Employee();
+            dtgv_list_employee.Columns[0].HeaderText = "Mã nhân viên";
+            dtgv_list_employee.Columns[1].HeaderText = "Họ và tên";
+            dtgv_list_employee.Columns[2].HeaderText = "Giới tính";
+            dtgv_list_employee.Columns[3].HeaderText = "Địa chỉ";
+            dtgv_list_employee.Columns[4].HeaderText = "Số điện thọa";
+            dtgv_list_employee.Columns[5].HeaderText = "Hệ số lương";
+            dtgv_list_employee.Columns[6].HeaderText = "Ngày sinh";
+            dtgv_list_employee.Columns[7].HeaderText = "Ngày vào làm";
+            dtgv_list_employee.Columns[8].HeaderText = "Chức vụ";
+            dtgv_list_employee.Columns[9].HeaderText = "Số CCCD";
         }
 
         private void LoadDataTo_GridView_Employee()
@@ -116,6 +128,7 @@ namespace BTL_WINFORM_2024
                 using (SqlDataAdapter adapter = new SqlDataAdapter(query, conn))
                 {
                     adapter.Fill(dataTable);
+                    
                 }
             }
 
@@ -128,20 +141,20 @@ namespace BTL_WINFORM_2024
             if (dtgv_list_employee.SelectedRows.Count > 0)
             {
                 DataGridViewRow selectedRow = dtgv_list_employee.SelectedRows[0];
-                textBox_id.Text = selectedRow.Cells["sMaNV"].Value.ToString();
-                label_name.Text = selectedRow.Cells["sTenNV"].Value.ToString();
+                currentID = textBox_id.Text = selectedRow.Cells["sMaNV"].Value.ToString();
+                tb_name.Text = selectedRow.Cells["sTenNV"].Value.ToString();
                 DateTime birthday = (DateTime)selectedRow.Cells["dNgaySinh"].Value;
                 // Sử dụng phương thức ToString để chỉ lấy ngày tháng năm
-                label_birthday.Text = birthday.ToString("dd/MM/yyyy");
-                textBox_address.Text = selectedRow.Cells["sDiaChi"].Value.ToString();
+                tbBirthDay.Text = birthday.ToString("dd/MM/yyyy");
+                tb_address.Text = selectedRow.Cells["sDiaChi"].Value.ToString();
                 // Nếu giới tính là True thì là Nam flase là Nữ 
                 bool sex = (bool)selectedRow.Cells["bGioiTinh"].Value;
-                label_sex.Text = sex ? "Nam" : "Nữ";
-                label_salary.Text = selectedRow.Cells["fHSL"].Value.ToString();
+                tbGender.Text = sex ? "Nam" : "Nữ";
+                tbHSL.Text = selectedRow.Cells["fHSL"].Value.ToString();
                 DateTime start_date = (DateTime)selectedRow.Cells["dNgayVaoLam"].Value;
-                label_start_date.Text = start_date.ToString("dd/MM/yyyy");
+                tbstart_date.Text = start_date.ToString("dd/MM/yyyy");
                 label_possition.Text = selectedRow.Cells["sChucVu"].Value.ToString().ToLower();
-                label_cccd.Text = selectedRow.Cells["sCCCD"].Value.ToString();
+                tbCCCD.Text = selectedRow.Cells["sCCCD"].Value.ToString();
             } 
         }
 
@@ -181,30 +194,38 @@ namespace BTL_WINFORM_2024
                         if (dataTable.Rows.Count > 0)
                         {
                             DataRow row = dataTable.Rows[0]; // Chỉ lấy dòng đầu tiên
-                                                             // Hiển thị thông tin nhân viên trên các Label
-                            label_name.Text = row["sTenNV"].ToString();
-                            label_birthday.Text = row["dNgaySinh"].ToString();
-                            textBox_address.Text = row["sDiaChi"].ToString();
-                            label_sex.Text = (bool)row["bGioiTinh"] ? "Nam" : "Nữ";
-                            label_salary.Text = row["fHSL"].ToString();
+                             // Hiển thị thông tin nhân viên trên các Label
+                            currentID = row["sMaNV"].ToString();
+                            tb_name.Text = row["sTenNV"].ToString();
+                            DateTime birthday = (DateTime)row["dNgaySinh"];
+                            // Sử dụng phương thức ToString để chỉ lấy ngày tháng năm
+                            tbBirthDay.Text = birthday.ToString("dd/MM/yyyy");
+                            tb_address.Text = row["sDiaChi"].ToString();
+                            tbGender.Text = (bool)row["bGioiTinh"] ? "Nam" : "Nữ";
+                            tbHSL.Text = row["fHSL"].ToString();
                             DateTime start_date = (DateTime)row["dNgayVaoLam"];
-                            label_start_date.Text = start_date.ToString("dd/MM/yyyy");
+                            tbstart_date.Text = start_date.ToString("dd/MM/yyyy");
                             // Thêm các thông tin khác nếu cần
-                            label_phone_number.Text = row["sSoDT"].ToString();
-                            label_cccd.Text = row["sCCCD"].ToString();
+                            tbPhone.Text = row["sSoDT"].ToString();
+                            tbCCCD.Text = row["sCCCD"].ToString();
                             label_possition.Text = row["sChucVu"].ToString().ToLower();
+
+                            // Nếu tìm thấy thì cho datagridview focus vào mục đó và thay đổi selectedIndex ở mục đó luôn 
+                            // viết hàm gì ......
+                            ScrollToEmployeeRow(user_id);
+                            // Tôi cần nếu tìm đến đâu mà người dùng chọn đến đâu thì gridView thay đổi cơ chứ không phải textBox là index đang selected ở bên trong gridview.
                         }
                         else
                         {
                             // Nếu không có dòng dữ liệu nào được trả về, đặt các Label về trạng thái rỗng
-                            label_name.Text = "";
-                            label_birthday.Text = "";
-                            textBox_address.Text = "";
-                            label_sex.Text = "";
-                            label_salary.Text = "";
-                            label_start_date.Text = "";
-                            label_phone_number.Text = "";
-                            label_cccd.Text = "";
+                            tb_name.Text = "";
+                            tbBirthDay.Text = "";
+                            tb_address.Text = "";
+                            tbGender.Text = "";
+                            tbHSL.Text = "";
+                            tbstart_date.Text = "";
+                            tbPhone.Text = "";
+                            tbCCCD.Text = "";
                             // Thêm các Label khác nếu cần
                         }
                     }
@@ -212,15 +233,48 @@ namespace BTL_WINFORM_2024
             }
             else
             {
-                label_name.Text = "";
-                label_birthday.Text = "";
-                textBox_address.Text = "";
-                label_sex.Text = "";
-                label_salary.Text = "";
-                label_start_date.Text = "";
-                label_phone_number.Text = "";
-                label_cccd.Text = "";
+                tb_name.Text = "";
+                tbBirthDay.Text = "";
+                tb_address.Text = "";
+                tbGender.Text = "";
+                tbHSL.Text = "";
+                tbstart_date.Text = "";
+                tbPhone.Text = "";
+                tbCCCD.Text = "";
             }
+        }
+
+        private void ScrollToEmployeeRow(string user_id)
+        {
+            try
+            {
+                foreach (DataGridViewRow row in dtgv_list_employee.Rows)
+                {
+                    try
+                    {
+                        if (row.Cells["sMaNV"].Value != null)
+                        {
+                            if (row.Cells["sMaNV"].Value.ToString() == user_id)
+                            {
+                                // Cuộn đến dòng tương ứng
+                                row.Selected = true;
+                                dtgv_list_employee.CurrentCell = row.Cells[0];
+                                dtgv_list_employee.FirstDisplayedScrollingRowIndex = row.Index;
+                                break;
+                            }
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e);
+                    }
+                    }
+                    
+            } catch(Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            
         }
 
         private bool check_exits_employee(string user_id)
@@ -356,24 +410,15 @@ namespace BTL_WINFORM_2024
             }
             else if (check_exits_employee(textBox_id.Text.ToString())) {
                 string employeeID = textBox_id.ToString();
-                label_name.Text = "";
-                label_birthday.Text = "";
-                textBox_address.Text = "";
-                label_sex.Text = "";
-                label_salary.Text = "";
-                label_start_date.Text = "";
-                label_phone_number.Text = "";
-                label_cccd.Text = "";
+                string name = tb_name.Text.ToString();
+                string birthday = tbBirthDay.Text.ToString();
+                string phone = tbPhone.Text.ToString();
 
-                string name = label_name.Text.ToString();
-                string birthday = label_birthday.Text.ToString();
-                string phone = label_phone_number.Text.ToString();
-
-                string address = textBox_address.Text.ToString();
-                bool sex = label_sex.Text.ToString() == "Nam" ? true: false;
-                string salary = label_salary.Text.ToString();
+                string address = tb_address.Text.ToString();
+                bool sex = tbGender.Text.ToString() == "Nam" ? true: false;
+                string salary = tbHSL.Text.ToString();
                 string posittion = label_possition.Text.ToString();
-                string cccd = label_cccd.Text.ToString();
+                string cccd = tbCCCD.Text.ToString();
 
                 ChinhSuaThongTinNV form_next = new ChinhSuaThongTinNV(employeeID, name, birthday, address, sex, phone, salary, posittion, cccd);
                 form_next.FormClosing += Form_next_FormClosing;
@@ -387,15 +432,148 @@ namespace BTL_WINFORM_2024
         private void Form_next_FormClosing(object sender, FormClosingEventArgs e)
         {
             // sau khi chinh sua xong thi load lai form
-            label_name.Text = "";
-            label_birthday.Text = "";
-            textBox_address.Text = "";
-            label_sex.Text = "";
-            label_salary.Text = "";
-            label_start_date.Text = "";
-            label_phone_number.Text = "";
+            UpdateInfor(currentID);
             LoadDataTo_GridView_Employee();
 
+        }
+
+        private void UpdateInfor(string currentID)
+        {
+            string user_id = currentID;
+            string query = "SELECT * FROM tblNhanVien WHERE sMaNV = @sMaNV";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                using (SqlCommand command = new SqlCommand(query, conn))
+                {
+                    command.Parameters.AddWithValue("@sMaNV", user_id);
+
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+
+                    if (dataTable.Rows.Count > 0)
+                    {
+                        DataRow row = dataTable.Rows[0]; // Chỉ lấy dòng đầu tiên
+                                                         // Hiển thị thông tin nhân viên trên các Label
+                        currentID = row["sMaNV"].ToString();
+                        tb_name.Text = row["sTenNV"].ToString();
+                        tbBirthDay.Text = row["dNgaySinh"].ToString();
+                        tb_address.Text = row["sDiaChi"].ToString();
+                        tbGender.Text = (bool)row["bGioiTinh"] ? "Nam" : "Nữ";
+                        tbHSL.Text = row["fHSL"].ToString();
+                        DateTime start_date = (DateTime)row["dNgayVaoLam"];
+                        tbstart_date.Text = start_date.ToString("dd/MM/yyyy");
+                        // Thêm các thông tin khác nếu cần
+                        tbPhone.Text = row["sSoDT"].ToString();
+                        tbCCCD.Text = row["sCCCD"].ToString();
+                        label_possition.Text = row["sChucVu"].ToString().ToLower();
+                    }
+                }
+            }
+        }
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void click_arange_name(object sender, EventArgs e)
+        {
+            try
+            {
+                string query = "SELECT * FROM tblNhanVien ORDER BY sTenNV ASC";
+
+                DataTable dataTable = new DataTable();
+
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, conn))
+                    {
+                        adapter.Fill(dataTable);
+                    }
+                }
+
+                // Gán DataTable đã lấy được vào DataGridView
+                dtgv_list_employee.DataSource = dataTable;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi sắp xếp: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void click_to_find(object sender, EventArgs e)
+        {
+            string filter = "sMaNV IS NOT NULL";
+            if (!string.IsNullOrEmpty(tb_name.Text.Trim()) && tb_name.Text.Trim() != "Trống ...")
+            {
+                filter += string.Format(" AND sTenNV LIKE '%{0}%'", tb_name.Text);
+            }
+            if (!string.IsNullOrEmpty(tbBirthDay.Text.Trim()) && tbBirthDay.Text.Trim() != "Trống ...")
+            {
+                filter += string.Format(" AND dNgaySinh LIKE '%{0}%'", tbBirthDay.Text);
+            }
+            if (!string.IsNullOrEmpty(tb_address.Text.Trim()) && tb_address.Text.Trim() != "Trống ...")
+            {
+                filter += string.Format("AND sDiaChi LIKE `%{0}%`", tb_address.Text);
+            }
+            if (!string.IsNullOrEmpty(tbPhone.Text.Trim()) && tbPhone.Text.Trim() != "Trống ...")
+            {
+                filter += string.Format("AND sSoDT LIKE `%{0}%`", tbPhone.Text);
+            }
+            if (!string.IsNullOrEmpty(tbCCCD.Text.Trim()) && tbCCCD.Text.Trim() != "Trống ...")
+            {
+                filter += string.Format("AND sCCCD LIKE `%{0}%`", tbCCCD.Text);
+            }
+            
+            // Viết lại hàm này theo mẫu trên:
+            //// Hàm showData sẽ lọc các bản ghi bên trong gridview với thông tin Mã nhân viên, tên nhân viên, ngày sinh, số điện thoại, 
+            ShowData(filter);
+        }
+
+        private void ShowData(string filter = "")
+        {
+            string querySelect = "Select_All_Employee";
+            using (SqlConnection sqlConnetion = new SqlConnection(connectionString))
+            {
+                using (SqlCommand sqlCommand = sqlConnetion.CreateCommand())
+                {
+                    sqlCommand.CommandText = querySelect;
+                    sqlCommand.CommandType = CommandType.StoredProcedure;
+                    using (SqlDataAdapter adapter = new SqlDataAdapter())
+                    {
+                        adapter.SelectCommand = sqlCommand;
+                        using (DataTable dataTable = new DataTable())
+                        {
+                            adapter.Fill(dataTable);
+                            if (dataTable.Rows.Count > 0)
+                            {
+                                dv_dgv = dataTable.DefaultView;
+                                dtgv_list_employee.AutoGenerateColumns = false;
+                                try
+                                {
+                                    if (!string.IsNullOrEmpty(filter))
+                                    {
+                                        dv_dgv.RowFilter = filter;
+                                    }
+                                } catch (Exception e)
+                                {
+                                    Console.WriteLine(e);
+                                    MessageBox.Show("Không tìm thấy bản ghi");
+                                }
+                                
+                                dtgv_list_employee.DataSource = dv_dgv;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Khong co ban ghi nao");
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

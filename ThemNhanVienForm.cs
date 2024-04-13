@@ -174,6 +174,8 @@ namespace BTL_WINFORM_2024
             if (result == DialogResult.Yes)
             {
                 // Thực hiện thêm mới nhân viên vào CSDL
+                newEmployeeID = GenerateNewEmployeeID();
+                Console.WriteLine(newEmployeeID);
                 AddNewEmployeeToDatabase(newEmployeeID, name, gender, address, cccd, birthday, position, phone, start_date);
 
                 // Hiển thị thông báo thành công
@@ -183,34 +185,43 @@ namespace BTL_WINFORM_2024
 
         // Các phương thức phụ trợ ở đây...
 
-        private string GenerateNewEmployeeID()
+        public string GenerateNewEmployeeID()
         {
-            // Lấy số lượng nhân viên hiện tại trong CSDL
-            int slgnv = GetCurrentEmployeeCount();
-
+            // Lấy số cuối cùng của bản ghi hiện tại ví dụ: NV015 thì nhân viên tiếp theo bằng NV + 015 + 1 => NV016
+            // Phải lấy được thông tin của bản ghi cuối.
+            // Hàm này sẽ lấy thông tin mã nhân viên cuối của bản ghi.
+            int lastIndex = GetLastIndex();
             // Tạo mã nhân viên mới
-            string newEmployeeID = "NV" + (slgnv + 1).ToString("D3");
+            string newEmployeeID = "NV" + (lastIndex + 1).ToString("D3");
 
             return newEmployeeID;
         }
-
-        private int GetCurrentEmployeeCount()
+        private int GetLastIndex()
         {
-            // Kết nối đến CSDL và thực hiện truy vấn lấy số lượng nhân viên
-            int currentEmployeeCount = 0;
-            string query = "SELECT COUNT(*) FROM tblNhanVien";
+            int lastIndex = 0;
+            string query = "SELECT TOP 1 sMaNV FROM tblNhanVien ORDER BY sMaNV DESC";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     connection.Open();
-                    currentEmployeeCount = (int)command.ExecuteScalar();
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    if (reader.Read())
+                    {
+                        string lastEmployeeID = reader["sMaNV"].ToString();
+                        string indexString = lastEmployeeID.Substring(2); // Bỏ qua hai ký tự đầu tiên (chữ "NV")
+                        lastIndex = int.Parse(indexString);
+                    }
                 }
             }
 
-            return currentEmployeeCount;
+            return lastIndex;
         }
+
+
+
 
         private void valid_phone_number(object sender, CancelEventArgs e)
         {
@@ -278,6 +289,7 @@ namespace BTL_WINFORM_2024
         private void AddNewEmployeeToDatabase(string employeeID, string name, int gender, string address, string cccd, DateTime birthday, string position, string phone,DateTime start_date)
         {
             // Thực hiện thêm mới nhân viên vào CSDL
+            Console.WriteLine(employeeID);
             string query = "INSERT INTO tblNhanVien (sMaNV, sTenNV, bGioiTinh, sDiaChi, sSoDT, fHSL, dNgaySinh, dNgayVaoLam, sChucVu, sCCCD) VALUES (@sMaNV, @sTenNV, @bGioiTinh, @sDiaChi, @sSoDT, 4, @dNgaySinh, GETDATE(), @sChucVu, @sCCCD)";
 
             using (SqlConnection connection = new SqlConnection(connectionString))

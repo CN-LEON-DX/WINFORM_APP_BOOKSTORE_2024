@@ -29,8 +29,12 @@ namespace BTL_WINFORM_2024
             if (sex == true)
             {
                 radioButton_male.Checked = true;
-            }else
+                radioButton_female.Checked = false;
+
+            }
+            else
             {
+                radioButton_male.Checked = false;
                 radioButton_female.Checked = true;
             }
             textBox_cccd.Text = cccd;
@@ -80,6 +84,19 @@ namespace BTL_WINFORM_2024
             }
 
         }
+
+        private void click_rb_femal(object sender, EventArgs e)
+        {
+            radioButton_female.Checked = true;
+            radioButton_male.Checked = false;
+        }
+
+        private void click_male(object sender, EventArgs e)
+        {
+            radioButton_male.Checked = true;
+            radioButton_female.Checked = false;
+        }
+
         private void valid_address_add(object sender, CancelEventArgs e)
         {
 
@@ -283,11 +300,5 @@ namespace BTL_WINFORM_2024
                 e.Cancel = false;
             }
         }
-
-        
-
-        
-
-        
     }
 }

@@ -30,7 +30,6 @@
         {
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker_birthday = new System.Windows.Forms.DateTimePicker();
-            this.button_exits = new System.Windows.Forms.Button();
             this.button_clear = new System.Windows.Forms.Button();
             this.button_add_new = new System.Windows.Forms.Button();
             this.textBox_salary = new System.Windows.Forms.TextBox();
@@ -78,43 +77,30 @@
             this.dateTimePicker_birthday.TabIndex = 33;
             this.dateTimePicker_birthday.Value = new System.DateTime(2024, 2, 26, 0, 0, 0, 0);
             // 
-            // button_exits
-            // 
-            this.button_exits.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(195)))), ((int)(((byte)(167)))));
-            this.button_exits.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_exits.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_exits.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button_exits.Location = new System.Drawing.Point(480, 614);
-            this.button_exits.Name = "button_exits";
-            this.button_exits.Size = new System.Drawing.Size(96, 35);
-            this.button_exits.TabIndex = 32;
-            this.button_exits.Text = "Hủy bỏ";
-            this.button_exits.UseVisualStyleBackColor = false;
-            // 
             // button_clear
             // 
-            this.button_clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(195)))), ((int)(((byte)(167)))));
+            this.button_clear.BackColor = System.Drawing.Color.White;
             this.button_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_clear.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_clear.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button_clear.Location = new System.Drawing.Point(270, 614);
+            this.button_clear.ForeColor = System.Drawing.Color.Black;
+            this.button_clear.Location = new System.Drawing.Point(362, 614);
             this.button_clear.Name = "button_clear";
             this.button_clear.Size = new System.Drawing.Size(149, 35);
             this.button_clear.TabIndex = 31;
-            this.button_clear.Text = "Xóa chính sửa";
+            this.button_clear.Text = "Hủy chính sửa";
             this.button_clear.UseVisualStyleBackColor = false;
             // 
             // button_add_new
             // 
-            this.button_add_new.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(195)))), ((int)(((byte)(167)))));
+            this.button_add_new.BackColor = System.Drawing.Color.White;
             this.button_add_new.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_add_new.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_add_new.ForeColor = System.Drawing.Color.Transparent;
-            this.button_add_new.Location = new System.Drawing.Point(117, 614);
+            this.button_add_new.ForeColor = System.Drawing.Color.Black;
+            this.button_add_new.Location = new System.Drawing.Point(133, 614);
             this.button_add_new.Name = "button_add_new";
-            this.button_add_new.Size = new System.Drawing.Size(101, 35);
+            this.button_add_new.Size = new System.Drawing.Size(175, 35);
             this.button_add_new.TabIndex = 30;
-            this.button_add_new.Text = "Cập nhật";
+            this.button_add_new.Text = "Cập nhật thông tin";
             this.button_add_new.UseVisualStyleBackColor = false;
             this.button_add_new.Click += new System.EventHandler(this.click_update_emp);
             // 
@@ -166,6 +152,7 @@
             this.radioButton_female.TabIndex = 27;
             this.radioButton_female.Text = "Nữ";
             this.radioButton_female.UseVisualStyleBackColor = true;
+            this.radioButton_female.Click += new System.EventHandler(this.click_rb_femal);
             // 
             // radioButton_male
             // 
@@ -180,6 +167,7 @@
             this.radioButton_male.TabIndex = 26;
             this.radioButton_male.Text = "Nam";
             this.radioButton_male.UseVisualStyleBackColor = true;
+            this.radioButton_male.Click += new System.EventHandler(this.click_male);
             // 
             // label2
             // 
@@ -318,7 +306,6 @@
             this.ClientSize = new System.Drawing.Size(665, 701);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dateTimePicker_birthday);
-            this.Controls.Add(this.button_exits);
             this.Controls.Add(this.button_clear);
             this.Controls.Add(this.button_add_new);
             this.Controls.Add(this.textBox_phone);
@@ -352,7 +339,6 @@
 
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker_birthday;
-        private System.Windows.Forms.Button button_exits;
         private System.Windows.Forms.Button button_clear;
         private System.Windows.Forms.Button button_add_new;
         private System.Windows.Forms.TextBox textBox_salary;
