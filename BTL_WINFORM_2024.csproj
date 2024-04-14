@@ -35,7 +35,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>.\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -62,6 +62,7 @@
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="Extensions.Configuration.ConfigurationManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Extensions.Configuration.ConfigurationManager.1.0.2\lib\netstandard2.0\Extensions.Configuration.ConfigurationManager.dll</HintPath>
     </Reference>
@@ -173,6 +174,7 @@
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -184,30 +186,64 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaoCao\CR_DSNV.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_DSNV.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaoCao\CR_DSNV_YEAR.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_DSNV_YEAR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BTLDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BTLDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BTLDataSet_NV.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BTLDataSet_NV.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormBaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaoCao.Designer.cs">
+      <DependentUpon>FormBaoCao.cs</DependentUpon>
+    </Compile>
     <Compile Include="ITranferData.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
-    </Compile>
     <Compile Include="ChinhSuaThongTinNV.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChinhSuaThongTinNV.Designer.cs">
       <DependentUpon>ChinhSuaThongTinNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyBanHangNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyBanHangNV.Designer.cs">
+      <DependentUpon>QuanLyBanHangNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyHangHoa.Designer.cs">
+      <DependentUpon>QuanLyHangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyHoaDon.Designer.cs">
+      <DependentUpon>QuanLyHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyKhachHang.Designer.cs">
+      <DependentUpon>QuanLyKhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="ThemNhanVienForm.cs">
       <SubType>Form</SubType>
@@ -229,17 +265,19 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="BaoCao\CR_DSNV.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_DSNV.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="BaoCao\CR_DSNV_YEAR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_DSNV_YEAR1.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="ChinhSuaThongTinNV.resx">
       <DependentUpon>ChinhSuaThongTinNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBaoCao.resx">
+      <DependentUpon>FormBaoCao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QLNhanVien1.resx">
       <DependentUpon>QLNhanVien1.cs</DependentUpon>
@@ -256,9 +294,46 @@
     <EmbeddedResource Include="DangNhapForm.resx">
       <DependentUpon>DangNhapForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyBanHangNV.resx">
+      <DependentUpon>QuanLyBanHangNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyHangHoa.resx">
+      <DependentUpon>QuanLyHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyHoaDon.resx">
+      <DependentUpon>QuanLyHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyKhachHang.resx">
+      <DependentUpon>QuanLyKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ThemNhanVienForm.resx">
       <DependentUpon>ThemNhanVienForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="BTLDataSet.xsc">
+      <DependentUpon>BTLDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>BTLDataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="BTLDataSet.xss">
+      <DependentUpon>BTLDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet.xss">
+      <DependentUpon>BTLDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet_NV.xsc">
+      <DependentUpon>BTLDataSet_NV.xsd</DependentUpon>
+    </None>
+    <None Include="BTLDataSet_NV.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BTLDataSet_NV.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BTLDataSet_NV.xss">
+      <DependentUpon>BTLDataSet_NV.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -284,6 +359,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets')" />

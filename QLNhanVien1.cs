@@ -113,6 +113,9 @@ namespace BTL_WINFORM_2024
             dtgv_list_employee.Columns[7].HeaderText = "Ngày vào làm";
             dtgv_list_employee.Columns[8].HeaderText = "Chức vụ";
             dtgv_list_employee.Columns[9].HeaderText = "Số CCCD";
+            label_option_employee.ForeColor = ColorTranslator.FromHtml("#6633FF"); 
+            panel_employee.Visible = true;
+            panel_report.Visible = false;
         }
 
         private void LoadDataTo_GridView_Employee()
@@ -458,7 +461,8 @@ namespace BTL_WINFORM_2024
                                                          // Hiển thị thông tin nhân viên trên các Label
                         currentID = row["sMaNV"].ToString();
                         tb_name.Text = row["sTenNV"].ToString();
-                        tbBirthDay.Text = row["dNgaySinh"].ToString();
+                        DateTime birthDay = (DateTime)row["dNgaySinh"];
+                        tbBirthDay.Text = birthDay.ToString("dd/MM/yyyy");
                         tb_address.Text = row["sDiaChi"].ToString();
                         tbGender.Text = (bool)row["bGioiTinh"] ? "Nam" : "Nữ";
                         tbHSL.Text = row["fHSL"].ToString();
@@ -561,7 +565,7 @@ namespace BTL_WINFORM_2024
                                 } catch (Exception e)
                                 {
                                     Console.WriteLine(e);
-                                    MessageBox.Show("Không tìm thấy bản ghi");
+                                    MessageBox.Show("Bản ghi đây thây");
                                 }
                                 
                                 dtgv_list_employee.DataSource = dv_dgv;
@@ -574,6 +578,184 @@ namespace BTL_WINFORM_2024
                     }
                 }
             }
+        }
+
+        private void button_edit_infor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_possition_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_name_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbBirthDay_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_address_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label24_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbCCCD_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbPhone_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbHSL_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbGender_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_id_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_delete_employee_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbstart_date_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_manage_Click(object sender, EventArgs e)
+        {
+            // Thay đổi màu của label "Quản lý nhân viên" khi được click
+            label_option_employee.ForeColor = ColorTranslator.FromHtml("#6633FF"); 
+
+            // Đặt màu cho label "Báo cáo" khi không được click
+            label_report.ForeColor = Color.White;
+
+            // Hiện panel quản lý nhân viên và ẩn panel báo cáo
+            panel_employee.Visible = true;
+            panel_report.Visible = false;
+        }
+
+        private void label_report_Click(object sender, EventArgs e)
+        {
+            // Thay đổi màu của label "Báo cáo" khi được click
+            label_report.ForeColor = ColorTranslator.FromHtml("#6633FF"); ;
+
+            // Đặt màu cho label "Quản lý nhân viên" khi không được click
+            label_option_employee.ForeColor = Color.White;
+
+            // Hiện panel báo cáo và ẩn panel quản lý nhân viên
+            panel_report.Visible = true;
+            panel_employee.Visible = false;
+        }
+
+        private void click_makeCR_All_Employee(object sender, EventArgs e)
+        {
+            // chuyển sang form báo cáo
+            string filter = "";
+            FormBaoCao formReport = new FormBaoCao();
+            formReport.Show();
+            formReport.ShowReport("CR_DSNV.rpt", "Select_Infor_Employee_Report", filter);
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            string filter = "";
+            FormBaoCao formReport = new FormBaoCao();
+            formReport.Show();
+            formReport.ShowReport("CR_DSNV_YEAR.rpt", "Select_StartYear_Employee_Report", filter);
         }
     }
 }

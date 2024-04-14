@@ -113,11 +113,10 @@ namespace BTL_WINFORM_2024
                                     // Form Đăng nhập hiện tại sẽ bị đóng 
                                     break;
                                 case 2:
-                                    // Customer
-
-                                    break;
-                                case 3:
                                     // Employee
+                                    form_next = new QuanLyBanHangNV();
+                                    form_next.Show();
+                                    this.Hide();
                                     break;
                             }
                         }

@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Configuration;
+using System.Data.SqlClient;
+using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 
 namespace BTL_WINFORM_2024
@@ -118,7 +112,7 @@ namespace BTL_WINFORM_2024
         {
             return valid_name && valid_address && valid_cccd && valid_phone;
         }
-        
+
         private void textBox_cccd_KeyPress(object sender, KeyPressEventArgs e)
         {
             // Kiểm tra xem ký tự được nhập có phải là chữ cái từ A-Z hoặc số từ 0-9 không
@@ -143,7 +137,7 @@ namespace BTL_WINFORM_2024
 
         }
 
-        
+
         private void click_add_new_emp(object sender, EventArgs e)
         {
             //- Công việc:
@@ -271,11 +265,11 @@ namespace BTL_WINFORM_2024
         private void button_clear_Click(object sender, EventArgs e)
         {
             // Khi nhấn thì xóa thông tin của người dùng đã nhập
-            radioButton_male.Checked =  true;
+            radioButton_male.Checked = true;
 
             // Lấy thông tin từ các controls trên form
             textBox_name.Text = "";
-            textBox_address.Text  = "";
+            textBox_address.Text = "";
             textBox_cccd.Text = "";
             comboBox1.SelectedItem = 0;
             textBox_phone.Text = "";
@@ -286,7 +280,7 @@ namespace BTL_WINFORM_2024
             this.Close();
         }
 
-        private void AddNewEmployeeToDatabase(string employeeID, string name, int gender, string address, string cccd, DateTime birthday, string position, string phone,DateTime start_date)
+        private void AddNewEmployeeToDatabase(string employeeID, string name, int gender, string address, string cccd, DateTime birthday, string position, string phone, DateTime start_date)
         {
             // Thực hiện thêm mới nhân viên vào CSDL
             Console.WriteLine(employeeID);
@@ -311,7 +305,7 @@ namespace BTL_WINFORM_2024
                 }
             }
         }
-   
+
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 

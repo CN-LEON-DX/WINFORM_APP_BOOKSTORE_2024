@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace BTL_WINFORM_2024
 {
-    public partial class Form3 : Form
+    public partial class QuanLyHangHoa : Form
     {
-        public Form3()
+        public QuanLyHangHoa()
         {
             InitializeComponent();
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form3_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
