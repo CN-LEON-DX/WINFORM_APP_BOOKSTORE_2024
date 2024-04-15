@@ -1,0 +1,148 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\\u0110\u1EA1i h\u1ECDc\\L\u1EADp tr\u00ECnh H\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\Qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\WINFORM_APP_BOOKSTORE_2024\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5F981210-202B-408F-8AE0-A95980327360}|BTL_WINFORM_2024.csproj|e:\\\u0111\u1EA1i h\u1ECDc\\l\u1EADp tr\u00ECnh h\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\winform_app_bookstore_2024\\baocao\\dsmuahang_ngay.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{5F981210-202B-408F-8AE0-A95980327360}|BTL_WINFORM_2024.csproj|solutionrelative:baocao\\dsmuahang_ngay.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F981210-202B-408F-8AE0-A95980327360}|BTL_WINFORM_2024.csproj|E:\\\u0110\u1EA1i h\u1ECDc\\L\u1EADp tr\u00ECnh H\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\Qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\WINFORM_APP_BOOKSTORE_2024\\formbaocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F981210-202B-408F-8AE0-A95980327360}|BTL_WINFORM_2024.csproj|solutionrelative:formbaocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F981210-202B-408F-8AE0-A95980327360}|BTL_WINFORM_2024.csproj|e:\\\u0111\u1EA1i h\u1ECDc\\l\u1EADp tr\u00ECnh h\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\winform_app_bookstore_2024\\quanlykhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F981210-202B-408F-8AE0-A95980327360}|BTL_WINFORM_2024.csproj|solutionrelative:quanlykhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F981210-202B-408F-8AE0-A95980327360}|BTL_WINFORM_2024.csproj|E:\\\u0110\u1EA1i h\u1ECDc\\L\u1EADp tr\u00ECnh H\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\Qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\WINFORM_APP_BOOKSTORE_2024\\quanlykhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5F981210-202B-408F-8AE0-A95980327360}|BTL_WINFORM_2024.csproj|solutionrelative:quanlykhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F981210-202B-408F-8AE0-A95980327360}|BTL_WINFORM_2024.csproj|E:\\\u0110\u1EA1i h\u1ECDc\\L\u1EADp tr\u00ECnh H\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\Qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\WINFORM_APP_BOOKSTORE_2024\\baocao\\dsmuahang.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{5F981210-202B-408F-8AE0-A95980327360}|BTL_WINFORM_2024.csproj|solutionrelative:baocao\\dsmuahang.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F981210-202B-408F-8AE0-A95980327360}|BTL_WINFORM_2024.csproj|E:\\\u0110\u1EA1i h\u1ECDc\\L\u1EADp tr\u00ECnh H\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\Qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\WINFORM_APP_BOOKSTORE_2024\\formbaocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5F981210-202B-408F-8AE0-A95980327360}|BTL_WINFORM_2024.csproj|solutionrelative:formbaocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F981210-202B-408F-8AE0-A95980327360}|BTL_WINFORM_2024.csproj|E:\\\u0110\u1EA1i h\u1ECDc\\L\u1EADp tr\u00ECnh H\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\Qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\WINFORM_APP_BOOKSTORE_2024\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F981210-202B-408F-8AE0-A95980327360}|BTL_WINFORM_2024.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F981210-202B-408F-8AE0-A95980327360}|BTL_WINFORM_2024.csproj|E:\\\u0110\u1EA1i h\u1ECDc\\L\u1EADp tr\u00ECnh H\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\Qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\WINFORM_APP_BOOKSTORE_2024\\quanlybanhangnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5F981210-202B-408F-8AE0-A95980327360}|BTL_WINFORM_2024.csproj|solutionrelative:quanlybanhangnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DSMuaHang_Ngay.rpt",
+              "DocumentMoniker": "E:\\\u0110\u1EA1i h\u1ECDc\\L\u1EADp tr\u00ECnh H\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\Qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\WINFORM_APP_BOOKSTORE_2024\\BaoCao\\DSMuaHang_Ngay.rpt",
+              "RelativeDocumentMoniker": "BaoCao\\DSMuaHang_Ngay.rpt",
+              "ToolTip": "E:\\\u0110\u1EA1i h\u1ECDc\\L\u1EADp tr\u00ECnh H\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\Qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\WINFORM_APP_BOOKSTORE_2024\\BaoCao\\DSMuaHang_Ngay.rpt*",
+              "RelativeToolTip": "BaoCao\\DSMuaHang_Ngay.rpt*",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPdSURBVDhPrZRbaBxVGMf/c9nd2Vuyu9nN5m7aStI2oWtSCBgtWgj10oe2D2Le1FRRBBEk\u002BCJo8amIIL5U0BfFF6mFalOs0CdrWqhJNkmTUEyyzaXuJpvsdXZ2dnauntmdbJvEvvkb/pxvZr7vP\u002Bec\u002BTj4XzEMg7LCCj39z7/y6vC7n1m3T2RtaWHi8ncXP7Bud8FaYwVPnS94pPeZgcihIBiGBkWuvfyzXcC0P9SsKrJ08\u002Br3XxbymaT1qgJjjRXaOrsiz518\u002BdyJSCv8Xid8HgcCXo7Ej1QQZciGrf7EswN9W\u002BlMLpva3hCLfNayAG2NNcw50RSFYklBtiAhs0diWYXXZcfxo23O4fMfXewbHHrNWx8IV6v/w7AGcSa\u002B\u002B0VebeVEXBuPgSezPT383qdDZ98YrRY9YYYmDKlm6KpkWsLvxhg2qTjaw14M9rRg4EgTBntbcKCtwel2OzmrbLchRUxoYmBe5kjTNAS6gHvGLK4LV/FD/lssUBMIB9xosuThbOSjj2z2GJr7txNTyGgpLGl/Y5G6j/viPH4VruAX4WfMKzOVD5qzN/Meh2ZcjRxRHZGPste7dIOGphuQjCKiUhTjpXFojAyH7oCmabjJ38Cl9FfIKCkYlLbPkG0\u002Bc/lFQI\u002BQOEg1cpGlDYP8TQVjxetYLi9DhYZcKYdCloeqqSQViKYn8f7GCL4\u002BdolsjrPqZMF\u002B8\u002BExV1lRfGleaY5tlP0zqzIu/JQC6\u002BtCOryCXDgKw6OD1hhIs2WU4xI6mjsx\u002BvrHaORCyFCCZVWFVgtri7qw/mebt3Br4BC73NPBIZGWEVsM4uFsL9KrByGyAkkkWxFX0cf24/zRt/FC6CQ8Ns\u002B\u002BJTM5tX47OrOwSp6vdbb6Q4c73Kc4O4tYUkN6MwRKDsLuT0HMJ/CU1I43B0bw1tBIxcjUZlpAdGpqYvavWzcqhrH524jN39FFxVZk65qebm1uOHeqP4BkXsc2r0NM\u002BWE8OAy7L4rPX/oEZyJnwZI22WmvZKaE6ejkxPTdqmGtbebu/oa529dgt7FwO\u002B3obnGgI2iDi2PgdzRg9MAFdLl6YZBcilSZKzXbj5whtVYzqRlKRR6lYp4kUzBbJ1cCNFJZ72Hhd9sRtIXB6nboul5b7uPaoWZoompAtghMLEuIZwxyhDFoD9LoDqvI8SISKQFxcnytb/E1lWS1cpjssOs8pGiGVw37yty61Ej\u002BC9cZouBlVTHoKKTWE7liOsvL0EpaucSbK6\u002BR2kqsWeFuw5YAN336eOCLsqK\u002BIxSl7rwgI54UZhaWtn9cXElOKqr28N6dMX7qjyuKVbIH4F/CwpxOdjf1iQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-04-15T10:33:52.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormBaoCao.cs",
+              "DocumentMoniker": "E:\\\u0110\u1EA1i h\u1ECDc\\L\u1EADp tr\u00ECnh H\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\Qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\WINFORM_APP_BOOKSTORE_2024\\FormBaoCao.cs",
+              "RelativeDocumentMoniker": "FormBaoCao.cs",
+              "ToolTip": "E:\\\u0110\u1EA1i h\u1ECDc\\L\u1EADp tr\u00ECnh H\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\Qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\WINFORM_APP_BOOKSTORE_2024\\FormBaoCao.cs",
+              "RelativeToolTip": "FormBaoCao.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAqwGgAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T09:46:11.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QuanLyKhachHang.cs",
+              "DocumentMoniker": "E:\\\u0110\u1EA1i h\u1ECDc\\L\u1EADp tr\u00ECnh H\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\Qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\WINFORM_APP_BOOKSTORE_2024\\QuanLyKhachHang.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachHang.cs",
+              "ToolTip": "E:\\\u0110\u1EA1i h\u1ECDc\\L\u1EADp tr\u00ECnh H\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\Qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\WINFORM_APP_BOOKSTORE_2024\\QuanLyKhachHang.cs",
+              "RelativeToolTip": "QuanLyKhachHang.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAawHsAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T08:28:24.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DSMuaHang.rpt",
+              "DocumentMoniker": "E:\\\u0110\u1EA1i h\u1ECDc\\L\u1EADp tr\u00ECnh H\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\Qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\WINFORM_APP_BOOKSTORE_2024\\BaoCao\\DSMuaHang.rpt",
+              "RelativeDocumentMoniker": "BaoCao\\DSMuaHang.rpt",
+              "ToolTip": "E:\\\u0110\u1EA1i h\u1ECDc\\L\u1EADp tr\u00ECnh H\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\Qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\WINFORM_APP_BOOKSTORE_2024\\BaoCao\\DSMuaHang.rpt",
+              "RelativeToolTip": "BaoCao\\DSMuaHang.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPdSURBVDhPrZRbaBxVGMf/c9nd2Vuyu9nN5m7aStI2oWtSCBgtWgj10oe2D2Le1FRRBBEk\u002BCJo8amIIL5U0BfFF6mFalOs0CdrWqhJNkmTUEyyzaXuJpvsdXZ2dnauntmdbJvEvvkb/pxvZr7vP\u002Bec\u002BTj4XzEMg7LCCj39z7/y6vC7n1m3T2RtaWHi8ncXP7Bud8FaYwVPnS94pPeZgcihIBiGBkWuvfyzXcC0P9SsKrJ08\u002Br3XxbymaT1qgJjjRXaOrsiz518\u002BdyJSCv8Xid8HgcCXo7Ej1QQZciGrf7EswN9W\u002BlMLpva3hCLfNayAG2NNcw50RSFYklBtiAhs0diWYXXZcfxo23O4fMfXewbHHrNWx8IV6v/w7AGcSa\u002B\u002B0VebeVEXBuPgSezPT383qdDZ98YrRY9YYYmDKlm6KpkWsLvxhg2qTjaw14M9rRg4EgTBntbcKCtwel2OzmrbLchRUxoYmBe5kjTNAS6gHvGLK4LV/FD/lssUBMIB9xosuThbOSjj2z2GJr7txNTyGgpLGl/Y5G6j/viPH4VruAX4WfMKzOVD5qzN/Meh2ZcjRxRHZGPste7dIOGphuQjCKiUhTjpXFojAyH7oCmabjJ38Cl9FfIKCkYlLbPkG0\u002Bc/lFQI\u002BQOEg1cpGlDYP8TQVjxetYLi9DhYZcKYdCloeqqSQViKYn8f7GCL4\u002BdolsjrPqZMF\u002B8\u002BExV1lRfGleaY5tlP0zqzIu/JQC6\u002BtCOryCXDgKw6OD1hhIs2WU4xI6mjsx\u002BvrHaORCyFCCZVWFVgtri7qw/mebt3Br4BC73NPBIZGWEVsM4uFsL9KrByGyAkkkWxFX0cf24/zRt/FC6CQ8Ns\u002B\u002BJTM5tX47OrOwSp6vdbb6Q4c73Kc4O4tYUkN6MwRKDsLuT0HMJ/CU1I43B0bw1tBIxcjUZlpAdGpqYvavWzcqhrH524jN39FFxVZk65qebm1uOHeqP4BkXsc2r0NM\u002BWE8OAy7L4rPX/oEZyJnwZI22WmvZKaE6ejkxPTdqmGtbebu/oa529dgt7FwO\u002B3obnGgI2iDi2PgdzRg9MAFdLl6YZBcilSZKzXbj5whtVYzqRlKRR6lYp4kUzBbJ1cCNFJZ72Hhd9sRtIXB6nboul5b7uPaoWZoompAtghMLEuIZwxyhDFoD9LoDqvI8SISKQFxcnytb/E1lWS1cpjssOs8pGiGVw37yty61Ej\u002BC9cZouBlVTHoKKTWE7liOsvL0EpaucSbK6\u002BR2kqsWeFuw5YAN336eOCLsqK\u002BIxSl7rwgI54UZhaWtn9cXElOKqr28N6dMX7qjyuKVbIH4F/CwpxOdjf1iQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-04-15T09:34:10.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QuanLyKhachHang.cs [Design]",
+              "DocumentMoniker": "E:\\\u0110\u1EA1i h\u1ECDc\\L\u1EADp tr\u00ECnh H\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\Qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\WINFORM_APP_BOOKSTORE_2024\\QuanLyKhachHang.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachHang.cs",
+              "ToolTip": "E:\\\u0110\u1EA1i h\u1ECDc\\L\u1EADp tr\u00ECnh H\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\Qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\WINFORM_APP_BOOKSTORE_2024\\QuanLyKhachHang.cs [Design]",
+              "RelativeToolTip": "QuanLyKhachHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T08:24:05.181Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormBaoCao.cs [Design]",
+              "DocumentMoniker": "E:\\\u0110\u1EA1i h\u1ECDc\\L\u1EADp tr\u00ECnh H\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\Qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\WINFORM_APP_BOOKSTORE_2024\\FormBaoCao.cs",
+              "RelativeDocumentMoniker": "FormBaoCao.cs",
+              "ToolTip": "E:\\\u0110\u1EA1i h\u1ECDc\\L\u1EADp tr\u00ECnh H\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\Qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\WINFORM_APP_BOOKSTORE_2024\\FormBaoCao.cs [Design]",
+              "RelativeToolTip": "FormBaoCao.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T09:46:08.495Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\\u0110\u1EA1i h\u1ECDc\\L\u1EADp tr\u00ECnh H\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\Qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\WINFORM_APP_BOOKSTORE_2024\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\\u0110\u1EA1i h\u1ECDc\\L\u1EADp tr\u00ECnh H\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\Qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\WINFORM_APP_BOOKSTORE_2024\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T08:43:37.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "QuanLyBanHangNV.cs [Design]",
+              "DocumentMoniker": "E:\\\u0110\u1EA1i h\u1ECDc\\L\u1EADp tr\u00ECnh H\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\Qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\WINFORM_APP_BOOKSTORE_2024\\QuanLyBanHangNV.cs",
+              "RelativeDocumentMoniker": "QuanLyBanHangNV.cs",
+              "ToolTip": "E:\\\u0110\u1EA1i h\u1ECDc\\L\u1EADp tr\u00ECnh H\u01B0\u1EDBng s\u1EF1 ki\u1EC7n\\Qu\u1EA3n l\u00FD b\u00E1n s\u00E1ch\\WINFORM_APP_BOOKSTORE_2024\\QuanLyBanHangNV.cs [Design]",
+              "RelativeToolTip": "QuanLyBanHangNV.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T08:16:23.027Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -7,6 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -53,8 +54,63 @@ namespace BTL_WINFORM_2024
                 }
             }
         }
-  
-
+        public void ShowReportDSMuaHang(string makh)
+        {
+            using(SqlConnection  conn = new SqlConnection(connectionString))
+            {
+                using(SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandText = "Select_dsmuahang";
+                    cmd.Parameters.Add("@makh", SqlDbType.VarChar, 10).Value = makh;
+                    using (SqlDataAdapter adapter = new SqlDataAdapter())
+                    {
+                        adapter.SelectCommand = cmd;
+                        using(DataTable dt = new DataTable())
+                        {
+                            adapter.Fill(dt);
+                            ReportDocument report = new ReportDocument();
+                            string path = string.Format("{0}\\BaoCao\\{1}",
+                                Application.StartupPath, "DSMuaHang.rpt");
+                            report.Load(path);
+                            report.Database.Tables["Select_dsmuahang"].SetDataSource(dt);
+                            report.SetParameterValue("sNguoiLapBieu", "Đỗ Minh Quân");
+                            crystalReportViewer1.ReportSource = report;
+                            crystalReportViewer1.Refresh();
+                        }
+                    }
+                }
+            }
+        }
+        public void ShowReportDSMuaHang_Ngay()
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandText = "select_thongkehoadon";
+                    using (SqlDataAdapter adapter = new SqlDataAdapter())
+                    {
+                        adapter.SelectCommand = cmd;
+                        using (DataTable dt = new DataTable())
+                        {
+                            adapter.Fill(dt);
+                            ReportDocument report = new ReportDocument();
+                            string path = string.Format("{0}\\BaoCao\\{1}",
+                                Application.StartupPath, "DSMuaHang_Ngay.rpt");
+                            report.Load(path);
+                            report.Database.Tables["select_thongkehoadon"].SetDataSource(dt);
+                            report.SetParameterValue("sNguoiLapBieu", "Đỗ Minh Quân");
+                            crystalReportViewer1.ReportSource = report;
+                            crystalReportViewer1.Refresh();
+                        }
+                    }
+                }
+            }
+        }
         private void FormBaoCao_Load(object sender, EventArgs e)
         {
 

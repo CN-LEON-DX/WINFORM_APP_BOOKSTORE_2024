@@ -198,6 +198,12 @@
       <DependentUpon>CR_DSNV_YEAR.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="BaoCao\DSMuaHang_Ngay.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMuaHang_Ngay.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="BTLDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -207,6 +213,17 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BTLDataSet_NV.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetDsMuaHang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetDsMuaHang.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\DSMuaHang.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMuaHang.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="FormBaoCao.cs">
       <SubType>Form</SubType>
@@ -273,8 +290,16 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CR_DSNV_YEAR1.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\DSMuaHang_Ngay.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DSMuaHang_Ngay.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChinhSuaThongTinNV.resx">
       <DependentUpon>ChinhSuaThongTinNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\DSMuaHang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DSMuaHang.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="FormBaoCao.resx">
       <DependentUpon>FormBaoCao.cs</DependentUpon>
@@ -333,6 +358,17 @@
     </None>
     <None Include="BTLDataSet_NV.xss">
       <DependentUpon>BTLDataSet_NV.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetDsMuaHang.xsc">
+      <DependentUpon>DataSetDsMuaHang.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetDsMuaHang.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetDsMuaHang.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetDsMuaHang.xss">
+      <DependentUpon>DataSetDsMuaHang.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
