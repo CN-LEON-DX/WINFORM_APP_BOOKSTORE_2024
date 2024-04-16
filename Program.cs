@@ -16,7 +16,7 @@ namespace BTL_WINFORM_2024
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QuanLyKhachHang());
+            Application.Run(new QuanLyHangHoa());
         }
     }
 }
