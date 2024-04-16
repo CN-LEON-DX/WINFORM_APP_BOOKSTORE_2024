@@ -226,6 +226,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BTLDataSet_NV.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ChiTietDonHang_KH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietDonHang_KH.Designer.cs">
+      <DependentUpon>ChiTietDonHang_KH.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataSetDsMuaHang.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -292,6 +298,12 @@
     <Compile Include="SuaHangHoa.Designer.cs">
       <DependentUpon>SuaHangHoa.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThemHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemHoaDon.Designer.cs">
+      <DependentUpon>ThemHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThemNhanVienForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -339,6 +351,9 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>DSMuaHang.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChiTietDonHang_KH.resx">
+      <DependentUpon>ChiTietDonHang_KH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormBaoCao.resx">
       <DependentUpon>FormBaoCao.cs</DependentUpon>
     </EmbeddedResource>
@@ -378,6 +393,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SuaHangHoa.resx">
       <DependentUpon>SuaHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemHoaDon.resx">
+      <DependentUpon>ThemHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThemNhanVienForm.resx">
       <DependentUpon>ThemNhanVienForm.cs</DependentUpon>

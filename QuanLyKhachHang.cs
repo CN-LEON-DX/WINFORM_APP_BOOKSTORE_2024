@@ -92,10 +92,10 @@ namespace BTL_WINFORM_2024
                     {
                         if (reader.Read())
                         {
-                            lb_TenKH.Text = reader["sTenKH"].ToString();
-                            lb_DiaChi.Text = reader["sDiaChi"].ToString();
-                            lb_Sdt.Text = reader["sSoDT"].ToString();
-                            lb_GioiTinh.Text = (bool)reader["bGioiTinh"] ? "Nam" : "Nữ";
+                            tb_TenKH.Text = reader["sTenKH"].ToString();
+                            tb_DiaChi.Text = reader["sDiaChi"].ToString();
+                            tb_Sdt.Text = reader["sSoDT"].ToString();
+                            tb_GioiTinh.Text = (bool)reader["bGioiTinh"] ? "Nam" : "Nữ";
                         }
                     }
                 }
@@ -122,6 +122,16 @@ namespace BTL_WINFORM_2024
             FormBaoCao f = new FormBaoCao();
             f.Show();
             f.ShowReportDSMuaHang_Ngay();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

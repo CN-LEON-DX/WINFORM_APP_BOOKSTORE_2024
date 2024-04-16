@@ -39,6 +39,7 @@ namespace BTL_WINFORM_2024
             this.bt_warehouse = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel_group = new System.Windows.Forms.Panel();
+            this.bt_logout = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -46,33 +47,33 @@ namespace BTL_WINFORM_2024
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(80, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 43);
+            this.label1.Size = new System.Drawing.Size(95, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "Trí tuệ";
             // 
             // label_current_time
             // 
             this.label_current_time.AutoSize = true;
-            this.label_current_time.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_current_time.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_current_time.ForeColor = System.Drawing.Color.White;
             this.label_current_time.Location = new System.Drawing.Point(618, 33);
             this.label_current_time.Name = "label_current_time";
-            this.label_current_time.Size = new System.Drawing.Size(152, 28);
+            this.label_current_time.Size = new System.Drawing.Size(150, 25);
             this.label_current_time.TabIndex = 2;
             this.label_current_time.Text = "3: 47 3/20/2024";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(812, 33);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(125, 28);
+            this.label12.Size = new System.Drawing.Size(125, 25);
             this.label12.TabIndex = 3;
             this.label12.Text = "Chào mừng !";
             this.label12.Click += new System.EventHandler(this.label12_Click);
@@ -80,18 +81,18 @@ namespace BTL_WINFORM_2024
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label4.Location = new System.Drawing.Point(51, 364);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 28);
+            this.label4.Size = new System.Drawing.Size(0, 25);
             this.label4.TabIndex = 4;
             // 
             // bt_manage_bill
             // 
             this.bt_manage_bill.FlatAppearance.BorderSize = 0;
             this.bt_manage_bill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_manage_bill.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_manage_bill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_manage_bill.ForeColor = System.Drawing.SystemColors.Control;
             this.bt_manage_bill.Location = new System.Drawing.Point(21, 26);
             this.bt_manage_bill.Name = "bt_manage_bill";
@@ -106,6 +107,7 @@ namespace BTL_WINFORM_2024
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label_current_time);
             this.panel1.Controls.Add(this.label12);
+            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(17, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1066, 100);
@@ -115,7 +117,7 @@ namespace BTL_WINFORM_2024
             // 
             this.bt_manage_customer.FlatAppearance.BorderSize = 0;
             this.bt_manage_customer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_manage_customer.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_manage_customer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_manage_customer.ForeColor = System.Drawing.SystemColors.Control;
             this.bt_manage_customer.Location = new System.Drawing.Point(21, 119);
             this.bt_manage_customer.Name = "bt_manage_customer";
@@ -129,7 +131,7 @@ namespace BTL_WINFORM_2024
             // 
             this.bt_warehouse.FlatAppearance.BorderSize = 0;
             this.bt_warehouse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_warehouse.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_warehouse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_warehouse.ForeColor = System.Drawing.SystemColors.Control;
             this.bt_warehouse.Location = new System.Drawing.Point(21, 212);
             this.bt_warehouse.Name = "bt_warehouse";
@@ -142,8 +144,10 @@ namespace BTL_WINFORM_2024
             // panel2
             // 
             this.panel2.Controls.Add(this.bt_manage_bill);
+            this.panel2.Controls.Add(this.bt_logout);
             this.panel2.Controls.Add(this.bt_manage_customer);
             this.panel2.Controls.Add(this.bt_warehouse);
+            this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(17, 118);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(232, 415);
@@ -151,22 +155,42 @@ namespace BTL_WINFORM_2024
             // 
             // panel_group
             // 
+            this.panel_group.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.panel_group.AutoScroll = true;
+            this.panel_group.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel_group.Location = new System.Drawing.Point(255, 118);
+            this.panel_group.MaximumSize = new System.Drawing.Size(828, 614);
             this.panel_group.Name = "panel_group";
             this.panel_group.Size = new System.Drawing.Size(828, 614);
             this.panel_group.TabIndex = 8;
+            this.panel_group.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_group_Paint);
+            // 
+            // bt_logout
+            // 
+            this.bt_logout.FlatAppearance.BorderSize = 0;
+            this.bt_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_logout.ForeColor = System.Drawing.SystemColors.Control;
+            this.bt_logout.Location = new System.Drawing.Point(21, 302);
+            this.bt_logout.Name = "bt_logout";
+            this.bt_logout.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bt_logout.Size = new System.Drawing.Size(116, 49);
+            this.bt_logout.TabIndex = 5;
+            this.bt_logout.Text = "Đăng xuất";
+            this.bt_logout.UseVisualStyleBackColor = true;
+            this.bt_logout.Click += new System.EventHandler(this.bt_logout_Click);
             // 
             // QuanLyBanHangNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(47)))));
-            this.ClientSize = new System.Drawing.Size(1095, 744);
+            this.ClientSize = new System.Drawing.Size(1102, 763);
             this.Controls.Add(this.panel_group);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label4);
-            this.MaximumSize = new System.Drawing.Size(1113, 791);
+            this.MaximumSize = new System.Drawing.Size(1120, 810);
             this.Name = "QuanLyBanHangNV";
             this.Text = "Quản lý bán hàng";
             this.Load += new System.EventHandler(this.QuanLyBanHangNV_Load);
@@ -190,5 +214,6 @@ namespace BTL_WINFORM_2024
         private System.Windows.Forms.Button bt_warehouse;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel_group;
+        private System.Windows.Forms.Button bt_logout;
     }
 }

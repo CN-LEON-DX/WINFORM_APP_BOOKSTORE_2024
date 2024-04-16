@@ -368,7 +368,6 @@ namespace BTL_WINFORM_2024
                                 if (rowsAffected > 0)
                                 {
                                     dtgv_list_employee.Rows.RemoveAt(selectedIndex);
-
                                     MessageBox.Show("Nhân viên đã được xóa thành công.", "Xóa thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 }
                                 else
@@ -756,6 +755,29 @@ namespace BTL_WINFORM_2024
             FormBaoCao formReport = new FormBaoCao();
             formReport.Show();
             formReport.ShowReport("CR_DSNV_YEAR.rpt", "Select_StartYear_Employee_Report", filter);
+        }
+
+        private void label_logout_Click(object sender, EventArgs e)
+        {
+            // Form xác nhận đăng xuất.
+            DialogResult result = MessageBox.Show("Xác nhận đăng xuất ?", "Thoát !", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                DangNhapForm formLogin = new DangNhapForm();
+                this.Close();
+                formLogin.Show();
+            }
+        }
+
+        private void Form_Closed(object sender, FormClosingEventArgs e)
+        {
+            // Đóng forrm
+            DialogResult result = MessageBox.Show("Xác nhận thoát app ?", "Thoát !", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result != DialogResult.Yes)
+            {
+                // Nếu người dùng không xác nhận đóng, hủy thao tác đóng form
+                e.Cancel = true;
+            }
         }
     }
 }

@@ -32,11 +32,11 @@ namespace BTL_WINFORM_2024
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
+            childForm.AutoSize = false;
             panel_group.Controls.Add(childForm);
             panel_group.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-      
         }
 
         private void label12_Click(object sender, EventArgs e)
@@ -86,6 +86,23 @@ namespace BTL_WINFORM_2024
                 case 3:
                     bt_warehouse.ForeColor = ColorTranslator.FromHtml("#6633FF");
                     break;
+            }
+        }
+
+        private void panel_group_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bt_logout_Click(object sender, EventArgs e)
+        {
+            // Form xác nhận đăng xuất.
+            DialogResult result = MessageBox.Show("Xác nhận đăng xuất ?", "Thoát !", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                DangNhapForm formLogin = new DangNhapForm();
+                this.Close();
+                formLogin.Show();
             }
         }
     }
