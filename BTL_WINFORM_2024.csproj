@@ -226,6 +226,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BTLDataSet_NV.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ChinhSuaThongTinKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChinhSuaThongTinKH.Designer.cs">
+      <DependentUpon>ChinhSuaThongTinKH.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChiTietDonHang_KH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -304,6 +310,12 @@
     <Compile Include="ThemHoaDon.Designer.cs">
       <DependentUpon>ThemHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThemKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemKhachHang.Designer.cs">
+      <DependentUpon>ThemKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThemNhanVienForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -343,6 +355,9 @@
     <EmbeddedResource Include="BaoCao\DSMuaHang_Ngay.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>DSMuaHang_Ngay.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChinhSuaThongTinKH.resx">
+      <DependentUpon>ChinhSuaThongTinKH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChinhSuaThongTinNV.resx">
       <DependentUpon>ChinhSuaThongTinNV.cs</DependentUpon>
@@ -396,6 +411,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThemHoaDon.resx">
       <DependentUpon>ThemHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemKhachHang.resx">
+      <DependentUpon>ThemKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThemNhanVienForm.resx">
       <DependentUpon>ThemNhanVienForm.cs</DependentUpon>
