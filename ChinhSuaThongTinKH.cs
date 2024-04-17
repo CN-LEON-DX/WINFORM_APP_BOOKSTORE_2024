@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Azure.ResourceManager.Sql.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -25,6 +26,50 @@ namespace BTL_WINFORM_2024
         private void btn_Huy_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void tb_Sdt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                // Nếu không phải số, hủy sự kiện KeyPress
+                e.Handled = true;
+            }
+        }
+        private void enable_btn_capnhat()
+        {
+            if (string.IsNullOrEmpty(tb_TenKh.Text))
+            {
+                btn_CapNhat.Enabled = false;
+                return;
+            }
+            if (string.IsNullOrEmpty(tb_DiaChi.Text))
+            {
+                btn_CapNhat.Enabled = false;
+                return;
+            }
+            if (string.IsNullOrEmpty(tb_Sdt.Text))
+            {
+                btn_CapNhat.Enabled = false;
+                return;
+            }
+            btn_CapNhat.Enabled = true;
+            return;
+        }
+
+        private void tb_TenKh_TextChanged(object sender, EventArgs e)
+        {
+            enable_btn_capnhat();
+        }
+
+        private void tb_DiaChi_TextChanged(object sender, EventArgs e)
+        {
+            enable_btn_capnhat();
+        }
+
+        private void tb_Sdt_TextChanged(object sender, EventArgs e)
+        {
+            enable_btn_capnhat();
         }
 
         public ChinhSuaThongTinKH(string makh, string tenkh, string diachi, string sdt, bool gioitinh)
@@ -63,6 +108,8 @@ namespace BTL_WINFORM_2024
 
             if (result == DialogResult.Yes)
             {
+                try
+                {
                     string updateQuery = "UPDATE tblKhachHang SET sTenKH = @tenkh, sDiaChi = @diachi, sSoDT = @sdt, bGioiTinh = @gioitinh WHERE sMaKH = @makh";
 
                     // Mở kết nối đến cơ sở dữ liệu
@@ -73,13 +120,14 @@ namespace BTL_WINFORM_2024
                         // Tạo đối tượng SqlCommand và thiết lập tham số cho câu lệnh SQL
                         using (SqlCommand command = conn.CreateCommand())
                         {
-                        command.CommandText = updateQuery;
+                            command.CommandText = updateQuery;
                             command.Parameters.AddWithValue("@makh", makh);
                             command.Parameters.AddWithValue("@tenkh", tenkh);
                             command.Parameters.AddWithValue("@diachi", diachi);
                             command.Parameters.AddWithValue("@sdt", sdt);
                             command.Parameters.AddWithValue("gioitinh", gioitinh);
                             int a = command.ExecuteNonQuery();
+                            Console.Write(a);
                             if (a > 0)
                             {
                                 MessageBox.Show("Cập nhật thông tin khách hàng thành công", "Xác nhận", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -91,6 +139,11 @@ namespace BTL_WINFORM_2024
                             }
                         }
                     }
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                }
             }
         }
 

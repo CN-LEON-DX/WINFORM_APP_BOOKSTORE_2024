@@ -110,6 +110,7 @@
             this.tb_TenKh.Name = "tb_TenKh";
             this.tb_TenKh.Size = new System.Drawing.Size(243, 30);
             this.tb_TenKh.TabIndex = 3;
+            this.tb_TenKh.TextChanged += new System.EventHandler(this.tb_TenKh_TextChanged);
             // 
             // tb_DiaChi
             // 
@@ -118,6 +119,7 @@
             this.tb_DiaChi.Name = "tb_DiaChi";
             this.tb_DiaChi.Size = new System.Drawing.Size(243, 30);
             this.tb_DiaChi.TabIndex = 4;
+            this.tb_DiaChi.TextChanged += new System.EventHandler(this.tb_DiaChi_TextChanged);
             // 
             // tb_Sdt
             // 
@@ -126,6 +128,8 @@
             this.tb_Sdt.Name = "tb_Sdt";
             this.tb_Sdt.Size = new System.Drawing.Size(243, 30);
             this.tb_Sdt.TabIndex = 5;
+            this.tb_Sdt.TextChanged += new System.EventHandler(this.tb_Sdt_TextChanged);
+            this.tb_Sdt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_Sdt_KeyPress);
             // 
             // rb_Nam
             // 

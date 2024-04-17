@@ -179,7 +179,7 @@ namespace BTL_WINFORM_2024
             }
             else
             {
-                string makh = cb_MaKH.ToString();
+                string makh = cb_MaKH.Text.ToString();
                 string tenkh = tb_TenKH.Text.ToString();
                 string sdt = tb_Sdt.Text.ToString();
                 string diachi = tb_DiaChi.Text.ToString();
@@ -196,6 +196,7 @@ namespace BTL_WINFORM_2024
             // sau khi chinh sua xong thi load lai form
             UpdateInfor(currentID);
             loaddatagridview();
+            
         }
 
         private void UpdateInfor(string currentID)
