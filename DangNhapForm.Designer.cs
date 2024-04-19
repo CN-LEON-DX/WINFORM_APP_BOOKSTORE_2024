@@ -142,7 +142,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(255, 36);
             this.button2.TabIndex = 4;
-            this.button2.Text = "Login";
+            this.button2.Text = "Đăng nhập";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.click_login);
             // 
@@ -151,11 +151,11 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(184)))), ((int)(((byte)(241)))));
-            this.label4.Location = new System.Drawing.Point(210, 270);
+            this.label4.Location = new System.Drawing.Point(196, 270);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 18);
+            this.label4.Size = new System.Drawing.Size(58, 18);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Signup";
+            this.label4.Text = "Đắng ký";
             // 
             // label3
             // 

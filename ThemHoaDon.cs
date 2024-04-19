@@ -133,8 +133,8 @@ namespace BTL_WINFORM_2024
                 isValid = false;
                 errorProvider.SetError(tb_Phone, "Số điện thoại chỉ được chứa số!");
             }
-            // Kiểm tra xem chuỗi có đúng 12 hoặc ít hơn 12 ký tự không
-            else if (phone.Length < 12 || phone.Length > 14)
+            // Kiểm tra xem chuỗi có đúng 12 ký tự không
+            else if (phone.Length != 12)
             {
                 isValid = false;
                 errorProvider.SetError(tb_Phone, "Số điện thoại phải có 12 số tới 14 số !");
@@ -156,21 +156,91 @@ namespace BTL_WINFORM_2024
 
         private void bt_create_now_Click(object sender, EventArgs e)
         {
-            // Thêm đơn hàng này thì cần truyền vào các tham số sau:
-            // BẢNG HÓA ĐƠN
-            // [iSoHD] -> TỤ tạo bên proc
-            //,[sMaNV] -> Lấy mã nhân viên bán là NV003
-            //,[sMaKH] -> check bên proc
-            //,[dNgayBan] là lấy thời điểm hiện tại, ở dạng DMY
+            string sTTDonHang = "";
 
-            // BẢNG CTHD
-            //,[sMaMH] -> đưa danh sách mã mặt hàng vào nếu có nhiểu ở dạng list
-            //,[fSoLuong] -> số lượng lấy ở listvew
-            //,[fGiaBan] -> giá bán lấy bên databasse
-            //,[fGiamGia] LẤY TỪ DATABASE RA. ĐƯA VÀO 
+            // Duyệt qua từng mục trong ListView để lấy thông tin và nối vào chuỗi sTTDonHang
+            foreach (ListViewItem item in listView_MH.Items)
+            {
+                if (sTTDonHang == "")
+                {
+                    sTTDonHang = item.Text;
+                }
+                else sTTDonHang += "; "+ item.Text; // Nối thông tin vào chuỗi sTTDonHang
+            }
+            Console.WriteLine(sTTDonHang);
 
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                // Mở kết nối
+                connection.Open();
 
+                // Lấy số hóa đơn mới từ cơ sở dữ liệu
+                int iSoHD = LaySoHoaDonMoi();
+                Console.WriteLine(sTTDonHang);
+                Console.WriteLine(iSoHD);
+
+                // Tạo đối tượng SqlCommand để thực thi stored procedure
+                using (SqlCommand command = new SqlCommand("Create_Bill_For_Customer", connection))
+                {
+                    command.CommandType = System.Data.CommandType.StoredProcedure;
+
+                    // Thêm các tham số vào stored procedure
+                    command.Parameters.AddWithValue("@iSoHD", iSoHD); 
+                    command.Parameters.AddWithValue("@sTenKH", tb_name.Text);
+                    command.Parameters.AddWithValue("@sTTDonHang", sTTDonHang); // Truyền chuỗi sTTDonHang vào tham số
+                    command.Parameters.AddWithValue("@sDiaChi", tb_address.Text);
+                    command.Parameters.AddWithValue("@sSoDT", tb_Phone.Text);
+                    command.Parameters.AddWithValue("@bGioiTinh", rdb_Nam.Checked ? 1 : 0);
+
+                    // Thực thi stored procedure
+                    int rowsAffected = command.ExecuteNonQuery();
+                    bool isSuccess = rowsAffected > 0;
+                    if (isSuccess)
+                    {
+                        MessageBox.Show("Thêm hóa đơn thành công!");
+                    }else
+                    {
+                        MessageBox.Show("Có lỗi xảy ra khi thêm hóa đơn.");
+                    }
+                    // Đóng kết nối sau khi thực thi xong
+                    connection.Close();
+                }
+            }
         }
+        public int LaySoHoaDonMoi( )
+        {
+            int iSoHD = 0;
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                using (SqlCommand command = new SqlCommand("SELECT MAX(iSoHD) FROM tblHoaDon", connection))
+                {
+                    object result = command.ExecuteScalar();
+                    if (result != DBNull.Value)
+                    {
+                        iSoHD = Convert.ToInt32(result) + 1;
+                    }
+                }
+            }
+            return iSoHD;
+        }
+        // Hàm để lấy số hóa đơn mới từ cơ sở dữ liệu
+        private int LaySoHoaDonMoi(SqlConnection connection)
+        {
+            int iSoHD = 0;
+            using (SqlCommand command = new SqlCommand("SELECT MAX(iSoHD) FROM TenBangHoaDon", connection))
+            {
+                object result = command.ExecuteScalar();
+                if (result != DBNull.Value)
+                {
+                    iSoHD = Convert.ToInt32(result) + 1;
+                }
+            }
+            return iSoHD;
+        }
+
+
 
         private void bt_Delete_infor_Click(object sender, EventArgs e)
         {

@@ -45,7 +45,7 @@ namespace BTL_WINFORM_2024
                             report.Load(path);
                             report.Database.Tables[name_proc].SetDataSource(dt);
 
-                            report.SetParameterValue("sNguoiLap", "Nguyễn Chính Siu");
+                            report.SetParameterValue("sNguoiLap", "Nguyễn Khắc Chính");
 
                             crystalReportViewer1.ReportSource = report;
                             crystalReportViewer1.Refresh();

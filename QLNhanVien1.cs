@@ -484,7 +484,7 @@ namespace BTL_WINFORM_2024
         {
             try
             {
-                string query = "SELECT * FROM tblNhanVien ORDER BY sTenNV ASC";
+                string query = "EXEC usp_ArrangeEmployeeByName";
 
                 DataTable dataTable = new DataTable();
 
