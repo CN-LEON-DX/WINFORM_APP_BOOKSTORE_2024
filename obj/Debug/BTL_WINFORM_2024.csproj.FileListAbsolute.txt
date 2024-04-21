@@ -433,5 +433,284 @@ E:\Đại học\Lập trình Hướng sự kiện\Quán lý bán sách\WINFORM_A
 E:\Đại học\Lập trình Hướng sự kiện\Quán lý bán sách\WINFORM_APP_BOOKSTORE_2024\System.ValueTuple.xml
 E:\Đại học\Lập trình Hướng sự kiện\Quán lý bán sách\WINFORM_APP_BOOKSTORE_2024\obj\Debug\BTL_WINFORM_2024.ThemKhachHang.resources
 E:\Đại học\Lập trình Hướng sự kiện\Quán lý bán sách\WINFORM_APP_BOOKSTORE_2024\obj\Debug\BTL_WINFORM_2024.ChinhSuaThongTinKH.resources
-C:\Users\chinh\Source\Repos\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.ChinhSuaThongTinKH.resources
-C:\Users\chinh\Source\Repos\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.ThemKhachHang.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\obj\Debug\BTL_WINFORM_2024.csproj.AssemblyReference.cache
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\obj\Debug\BTL_WINFORM_2024.ChinhSuaThongTinNV.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\obj\Debug\BTL_WINFORM_2024.ChiTietDonHang_KH.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\obj\Debug\BTL_WINFORM_2024.FormBaoCao.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\obj\Debug\BTL_WINFORM_2024.FormBCDSHH.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\obj\Debug\BTL_WINFORM_2024.NhapHangHoa.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\obj\Debug\BTL_WINFORM_2024.QLNhanVien1.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\obj\Debug\BTL_WINFORM_2024.Properties.Resources.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\obj\Debug\BTL_WINFORM_2024.DangNhapForm.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\obj\Debug\BTL_WINFORM_2024.QuanLyBanHangNV.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\obj\Debug\BTL_WINFORM_2024.QuanLyHangHoa.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\obj\Debug\BTL_WINFORM_2024.QuanLyHoaDon.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\obj\Debug\BTL_WINFORM_2024.QuanLyKhachHang.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\obj\Debug\BTL_WINFORM_2024.SuaHangHoa.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\obj\Debug\BTL_WINFORM_2024.ThemHoaDon.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\obj\Debug\BTL_WINFORM_2024.ThemNhanVienForm.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\obj\Debug\BTL_WINFORM_2024.csproj.GenerateResource.cache
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\obj\Debug\BTL_WINFORM_2024.csproj.CoreCompileInputs.cache
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\obj\Debug\BTL_WINF.5DCCC558.Up2Date
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\BTL_WINFORM_2024.exe.config
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\obj\Debug\BTL_WINFORM_2024.exe
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\obj\Debug\BTL_WINFORM_2024.pdb
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\BTL_WINFORM_2024.exe
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\BTL_WINFORM_2024.pdb
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Azure.Core.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Azure.ResourceManager.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Azure.ResourceManager.Sql.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\CrystalDecisions.CrystalReports.Engine.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\CrystalDecisions.ReportSource.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\CrystalDecisions.Shared.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\CrystalDecisions.Windows.Forms.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Extensions.Configuration.ConfigurationManager.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Microsoft.Extensions.Configuration.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Microsoft.Extensions.Configuration.FileExtensions.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Microsoft.Extensions.FileProviders.Physical.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Microsoft.Extensions.FileSystemGlobbing.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Microsoft.Extensions.Primitives.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Microsoft.SqlServer.ConnectionInfo.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.Buffers.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.Configuration.Abstractions.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.Configuration.ConfigurationManager.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.Diagnostics.DiagnosticSource.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.Memory.Data.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.Memory.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.Numerics.Vectors.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.Runtime.CompilerServices.Unsafe.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.Text.Encodings.Web.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.Text.Json.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.Threading.Tasks.Extensions.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.ValueTuple.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\CrystalDecisions.ReportAppServer.ClientDoc.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\stdole.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Azure.Core.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Azure.ResourceManager.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Azure.ResourceManager.Sql.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Microsoft.Bcl.AsyncInterfaces.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Microsoft.Extensions.Configuration.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Microsoft.Extensions.Configuration.Abstractions.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Microsoft.Extensions.Configuration.FileExtensions.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Microsoft.Extensions.FileProviders.Abstractions.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Microsoft.Extensions.FileProviders.Physical.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Microsoft.Extensions.FileSystemGlobbing.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\Microsoft.Extensions.Primitives.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.Buffers.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.Configuration.Abstractions.pdb
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.Configuration.ConfigurationManager.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.Diagnostics.DiagnosticSource.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.Memory.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.Memory.Data.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.Numerics.Vectors.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.Runtime.CompilerServices.Unsafe.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.Text.Encodings.Web.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.Text.Json.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.Threading.Tasks.Extensions.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\System.ValueTuple.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\obj\Debug\BTL_WINFORM_2024.ThemKhachHang.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL - Copy\obj\Debug\BTL_WINFORM_2024.ChinhSuaThongTinKH.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.csproj.AssemblyReference.cache
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.ChinhSuaThongTinKH.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.ChinhSuaThongTinNV.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.ChiTietDonHang_KH.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.FormBaoCao.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.FormBCDSHH.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.NhapHangHoa.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.QLNhanVien1.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.Properties.Resources.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.DangNhapForm.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.QuanLyBanHangNV.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.QuanLyHangHoa.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.QuanLyHoaDon.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.QuanLyKhachHang.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.SuaHangHoa.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.ThemHoaDon.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.ThemKhachHang.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.ThemNhanVienForm.resources
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.csproj.GenerateResource.cache
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.csproj.CoreCompileInputs.cache
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\obj\Debug\BTL_WINF.5DCCC558.Up2Date
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\BTL_WINFORM_2024.exe.config
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.exe
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.pdb
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\BTL_WINFORM_2024.exe
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\BTL_WINFORM_2024.pdb
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Azure.Core.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Azure.ResourceManager.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Azure.ResourceManager.Sql.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\CrystalDecisions.CrystalReports.Engine.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\CrystalDecisions.ReportSource.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\CrystalDecisions.Shared.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\CrystalDecisions.Windows.Forms.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Extensions.Configuration.ConfigurationManager.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Microsoft.Extensions.Configuration.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Microsoft.Extensions.Configuration.FileExtensions.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Microsoft.Extensions.FileProviders.Physical.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Microsoft.Extensions.FileSystemGlobbing.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Microsoft.Extensions.Primitives.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Microsoft.SqlServer.ConnectionInfo.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.Buffers.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.Configuration.Abstractions.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.Configuration.ConfigurationManager.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.Diagnostics.DiagnosticSource.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.Memory.Data.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.Memory.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.Numerics.Vectors.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.Runtime.CompilerServices.Unsafe.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.Text.Encodings.Web.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.Text.Json.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.Threading.Tasks.Extensions.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.ValueTuple.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.ClientDoc.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\stdole.dll
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Azure.Core.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Azure.ResourceManager.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Azure.ResourceManager.Sql.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Microsoft.Bcl.AsyncInterfaces.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Microsoft.Extensions.Configuration.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Microsoft.Extensions.Configuration.Abstractions.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Microsoft.Extensions.Configuration.FileExtensions.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Microsoft.Extensions.FileProviders.Abstractions.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Microsoft.Extensions.FileProviders.Physical.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Microsoft.Extensions.FileSystemGlobbing.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\Microsoft.Extensions.Primitives.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.Buffers.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.Configuration.Abstractions.pdb
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.Configuration.ConfigurationManager.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.Diagnostics.DiagnosticSource.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.Memory.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.Memory.Data.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.Numerics.Vectors.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.Runtime.CompilerServices.Unsafe.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.Text.Encodings.Web.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.Text.Json.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.Threading.Tasks.Extensions.xml
+E:\Đại học\Lập trình Hướng sự kiện\WINFORM_APP_BTL\System.ValueTuple.xml
+D:\Download_Default\WINFORM_APP_BTL\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.csproj.AssemblyReference.cache
+D:\Download_Default\WINFORM_APP_BTL\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.exe
+D:\Download_Default\WINFORM_APP_BTL\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.pdb
+D:\Download_Default\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.csproj.AssemblyReference.cache
+D:\Download_Default\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.exe
+D:\Download_Default\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.pdb
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.csproj.AssemblyReference.cache
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.exe
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.pdb
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.ChinhSuaThongTinKH.resources
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.ChinhSuaThongTinNV.resources
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.ChiTietDonHang_KH.resources
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.FormBaoCao.resources
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.FormBCDSHH.resources
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.NhapHangHoa.resources
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.QLNhanVien1.resources
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.Properties.Resources.resources
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.DangNhapForm.resources
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.QuanLyBanHangNV.resources
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.QuanLyHangHoa.resources
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.QuanLyHoaDon.resources
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.QuanLyKhachHang.resources
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.SuaHangHoa.resources
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.ThemHoaDon.resources
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.ThemKhachHang.resources
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.ThemNhanVienForm.resources
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.csproj.GenerateResource.cache
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.csproj.CoreCompileInputs.cache
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.csproj.CopyComplete
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\BTL_WINFORM_2024.exe.config
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\BTL_WINFORM_2024.exe
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\BTL_WINFORM_2024.pdb
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Azure.Core.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Azure.ResourceManager.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Azure.ResourceManager.Sql.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\CrystalDecisions.ReportSource.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\CrystalDecisions.Shared.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\CrystalDecisions.Windows.Forms.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Extensions.Configuration.ConfigurationManager.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Microsoft.Extensions.Configuration.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Microsoft.Extensions.Primitives.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Microsoft.SqlServer.ConnectionInfo.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.Buffers.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.Configuration.Abstractions.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.Configuration.ConfigurationManager.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.Diagnostics.DiagnosticSource.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.Memory.Data.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.Memory.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.Numerics.Vectors.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.Text.Encodings.Web.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.Text.Json.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.Threading.Tasks.Extensions.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.ValueTuple.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\stdole.dll
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Azure.Core.xml
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Azure.ResourceManager.xml
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Azure.ResourceManager.Sql.xml
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Microsoft.Extensions.Configuration.xml
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Microsoft.Extensions.FileProviders.Physical.xml
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Microsoft.Extensions.FileSystemGlobbing.xml
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\Microsoft.Extensions.Primitives.xml
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.Buffers.xml
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.Configuration.Abstractions.pdb
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.Configuration.ConfigurationManager.xml
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.Diagnostics.DiagnosticSource.xml
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.Memory.xml
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.Memory.Data.xml
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.Numerics.Vectors.xml
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.Text.Encodings.Web.xml
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.Text.Json.xml
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.Threading.Tasks.Extensions.xml
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\System.ValueTuple.xml
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.XemCTDonHang.resources
+C:\Users\chinh\WINFORM_APP_final\WINFORM_APP_BTL\obj\Debug\BTL_WINFORM_2024.XuatHoaDon.resources

@@ -6,11 +6,9 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
-using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace BTL_WINFORM_2024
 {
@@ -24,24 +22,14 @@ namespace BTL_WINFORM_2024
             InitializeComponent();
         }
 
-        private void btn_Them_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
-            string makh = GenerateNewClientID();
 
-            int gioitinh = rb_Nam.Checked ? 1 : 0;
-            string tenkh = tb_TenKH.Text;
-            string diachi = tb_DiaChi.Text;
-            string sdt = tb_Sdt.Text;
-            DialogResult result = MessageBox.Show("Bạn có chắc muốn thêm khách hàng này không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+        }
 
-            if (result == DialogResult.Yes)
-            {
-                makh = GenerateNewClientID();
-                AddNewClientToDatabase(makh, tenkh, diachi, sdt, gioitinh);
+        private void label4_Click(object sender, EventArgs e)
+        {
 
-                // Hiển thị thông báo thành công
-                MessageBox.Show("Thêm mới khách hàng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
         }
         private void AddNewClientToDatabase(string makh, string tenkh, string diachi, string sdt, int gioitinh)
         {
@@ -134,11 +122,6 @@ namespace BTL_WINFORM_2024
             btn_Them.Enabled = false;
         }
 
-        private void btn_Huy_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void tb_Sdt_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
@@ -148,12 +131,37 @@ namespace BTL_WINFORM_2024
             }
         }
 
+        private void btn_Huy_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void btn_KhoiTao_Click(object sender, EventArgs e)
         {
             tb_TenKH.Text = "";
             tb_DiaChi.Text = "";
             tb_Sdt.Text = "";
             rb_Nam.Checked = true;
+        }
+
+        private void btn_Them_Click(object sender, EventArgs e)
+        {
+            string makh = GenerateNewClientID();
+
+            int gioitinh = rb_Nam.Checked ? 1 : 0;
+            string tenkh = tb_TenKH.Text;
+            string diachi = tb_DiaChi.Text;
+            string sdt = tb_Sdt.Text;
+            DialogResult result = MessageBox.Show("Bạn có chắc muốn thêm khách hàng này không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                makh = GenerateNewClientID();
+                AddNewClientToDatabase(makh, tenkh, diachi, sdt, gioitinh);
+
+                // Hiển thị thông báo thành công
+                MessageBox.Show("Thêm mới khách hàng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

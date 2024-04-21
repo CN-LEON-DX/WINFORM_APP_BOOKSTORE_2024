@@ -1,5 +1,4 @@
-﻿using Azure.ResourceManager.Sql.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -7,11 +6,9 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
-using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace BTL_WINFORM_2024
 {
@@ -21,11 +18,10 @@ namespace BTL_WINFORM_2024
             .ConnectionStrings["ConnectionStringBTL"]
             .ConnectionString;
         string makh, tenkh, diachi, sdt;
-        bool gioitinh;
 
-        private void btn_Huy_Click(object sender, EventArgs e)
+        private void tb_Sdt_TextChanged(object sender, EventArgs e)
         {
-            this.Close();
+            enable_btn_capnhat();
         }
 
         private void tb_Sdt_KeyPress(object sender, KeyPressEventArgs e)
@@ -36,26 +32,8 @@ namespace BTL_WINFORM_2024
                 e.Handled = true;
             }
         }
-        private void enable_btn_capnhat()
-        {
-            if (string.IsNullOrEmpty(tb_TenKh.Text))
-            {
-                btn_CapNhat.Enabled = false;
-                return;
-            }
-            if (string.IsNullOrEmpty(tb_DiaChi.Text))
-            {
-                btn_CapNhat.Enabled = false;
-                return;
-            }
-            if (string.IsNullOrEmpty(tb_Sdt.Text))
-            {
-                btn_CapNhat.Enabled = false;
-                return;
-            }
-            btn_CapNhat.Enabled = true;
-            return;
-        }
+
+        bool gioitinh;
 
         private void tb_TenKh_TextChanged(object sender, EventArgs e)
         {
@@ -67,20 +45,6 @@ namespace BTL_WINFORM_2024
             enable_btn_capnhat();
         }
 
-        private void tb_Sdt_TextChanged(object sender, EventArgs e)
-        {
-            enable_btn_capnhat();
-        }
-
-        public ChinhSuaThongTinKH(string makh, string tenkh, string diachi, string sdt, bool gioitinh)
-        {
-            this.makh = makh;
-            this.tenkh = tenkh;
-            this.diachi = diachi;
-            this.sdt = sdt;
-            this.gioitinh = gioitinh;
-            InitializeComponent();
-        }
         private void ChinhSuaThongTinKH_Load(object sender, EventArgs e)
         {
             tb_TenKh.Text = tenkh;
@@ -98,6 +62,7 @@ namespace BTL_WINFORM_2024
                 rb_Nu.Checked = true;
             }
         }
+
         private void btn_CapNhat_Click(object sender, EventArgs e)
         {
             int gioitinh = rb_Nam.Checked ? 1 : 0;
@@ -140,12 +105,46 @@ namespace BTL_WINFORM_2024
                         }
                     }
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     MessageBox.Show("Lỗi: " + ex.Message);
                 }
             }
         }
 
+        private void btn_Huy_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        public ChinhSuaThongTinKH(string makh, string tenkh, string diachi, string sdt, bool gioitinh)
+        {
+            this.makh = makh;
+            this.tenkh = tenkh;
+            this.diachi = diachi;
+            this.sdt = sdt;
+            this.gioitinh = gioitinh;
+            InitializeComponent();
+        }
+        private void enable_btn_capnhat()
+        {
+            if (string.IsNullOrEmpty(tb_TenKh.Text))
+            {
+                btn_CapNhat.Enabled = false;
+                return;
+            }
+            if (string.IsNullOrEmpty(tb_DiaChi.Text))
+            {
+                btn_CapNhat.Enabled = false;
+                return;
+            }
+            if (string.IsNullOrEmpty(tb_Sdt.Text))
+            {
+                btn_CapNhat.Enabled = false;
+                return;
+            }
+            btn_CapNhat.Enabled = true;
+            return;
+        }
     }
 }

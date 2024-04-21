@@ -54,6 +54,40 @@ namespace BTL_WINFORM_2024
                 }
             }
         }
+        public void ShowReport_DS_Email(string name_report, string name_proc, string email, string customer_name)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                using (SqlCommand comm = conn.CreateCommand())
+                {
+                    comm.CommandText = name_proc;
+                    comm.CommandType = CommandType.StoredProcedure;
+                    comm.Parameters.AddWithValue("@sEmail", email);
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter())
+                    {
+                        adapter.SelectCommand = comm;
+                        using (DataTable dt = new DataTable())
+                        {
+                            adapter.Fill(dt);
+                            // Load data to report
+                            ReportDocument report = new ReportDocument();
+                            string path = string.Format("{0}\\BaoCao\\{1}",
+                                Application.StartupPath, name_report);
+                            report.Load(path);
+                            report.Database.Tables[name_proc].SetDataSource(dt);
+
+                            report.SetParameterValue("sTenKH", customer_name);
+                            report.SetParameterValue("Email", email);
+                            report.SetParameterValue("sNguoiLap", "Nguyễn Khắc Chính");
+
+                            crystalReportViewer1.ReportSource = report;
+                            crystalReportViewer1.Refresh();
+                        }
+                    }
+                }
+            }
+        }
         public void ShowReportDSMuaHang(string makh)
         {
             using(SqlConnection  conn = new SqlConnection(connectionString))

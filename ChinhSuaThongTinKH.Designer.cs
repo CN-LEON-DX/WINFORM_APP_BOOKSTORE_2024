@@ -47,7 +47,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 25);
+            this.label1.Location = new System.Drawing.Point(16, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(210, 28);
             this.label1.TabIndex = 0;
@@ -56,8 +56,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(47, 82);
+            this.label2.Location = new System.Drawing.Point(50, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(175, 26);
             this.label2.TabIndex = 1;
@@ -66,8 +65,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(75, 161);
+            this.label3.Location = new System.Drawing.Point(81, 146);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 26);
             this.label3.TabIndex = 2;
@@ -76,69 +74,68 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(75, 260);
+            this.label4.Location = new System.Drawing.Point(81, 255);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 26);
-            this.label4.TabIndex = 2;
+            this.label4.TabIndex = 3;
             this.label4.Text = "Địa chỉ";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(75, 359);
+            this.label5.Location = new System.Drawing.Point(81, 364);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(131, 26);
-            this.label5.TabIndex = 2;
+            this.label5.TabIndex = 4;
             this.label5.Text = "Số điện thoại";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(75, 458);
+            this.label6.Location = new System.Drawing.Point(81, 473);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(91, 26);
-            this.label6.TabIndex = 2;
+            this.label6.TabIndex = 5;
             this.label6.Text = "Giới tính";
             // 
             // tb_TenKh
             // 
-            this.tb_TenKh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_TenKh.Location = new System.Drawing.Point(223, 157);
+            this.tb_TenKh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(47)))));
+            this.tb_TenKh.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.tb_TenKh.Location = new System.Drawing.Point(236, 141);
             this.tb_TenKh.Name = "tb_TenKh";
-            this.tb_TenKh.Size = new System.Drawing.Size(243, 30);
-            this.tb_TenKh.TabIndex = 3;
+            this.tb_TenKh.Size = new System.Drawing.Size(254, 31);
+            this.tb_TenKh.TabIndex = 6;
             this.tb_TenKh.TextChanged += new System.EventHandler(this.tb_TenKh_TextChanged);
             // 
             // tb_DiaChi
             // 
-            this.tb_DiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_DiaChi.Location = new System.Drawing.Point(223, 256);
+            this.tb_DiaChi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(47)))));
+            this.tb_DiaChi.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.tb_DiaChi.Location = new System.Drawing.Point(236, 250);
             this.tb_DiaChi.Name = "tb_DiaChi";
-            this.tb_DiaChi.Size = new System.Drawing.Size(243, 30);
-            this.tb_DiaChi.TabIndex = 4;
+            this.tb_DiaChi.Size = new System.Drawing.Size(254, 31);
+            this.tb_DiaChi.TabIndex = 7;
             this.tb_DiaChi.TextChanged += new System.EventHandler(this.tb_DiaChi_TextChanged);
             // 
             // tb_Sdt
             // 
-            this.tb_Sdt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Sdt.Location = new System.Drawing.Point(223, 355);
+            this.tb_Sdt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(47)))));
+            this.tb_Sdt.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.tb_Sdt.Location = new System.Drawing.Point(236, 359);
             this.tb_Sdt.Name = "tb_Sdt";
-            this.tb_Sdt.Size = new System.Drawing.Size(243, 30);
-            this.tb_Sdt.TabIndex = 5;
+            this.tb_Sdt.Size = new System.Drawing.Size(254, 31);
+            this.tb_Sdt.TabIndex = 8;
             this.tb_Sdt.TextChanged += new System.EventHandler(this.tb_Sdt_TextChanged);
             this.tb_Sdt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_Sdt_KeyPress);
             // 
             // rb_Nam
             // 
             this.rb_Nam.AutoSize = true;
-            this.rb_Nam.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_Nam.Location = new System.Drawing.Point(223, 458);
+            this.rb_Nam.Location = new System.Drawing.Point(236, 469);
             this.rb_Nam.Name = "rb_Nam";
             this.rb_Nam.Size = new System.Drawing.Size(74, 30);
-            this.rb_Nam.TabIndex = 6;
+            this.rb_Nam.TabIndex = 9;
             this.rb_Nam.TabStop = true;
             this.rb_Nam.Text = "Nam";
             this.rb_Nam.UseVisualStyleBackColor = true;
@@ -146,41 +143,41 @@
             // rb_Nu
             // 
             this.rb_Nu.AutoSize = true;
-            this.rb_Nu.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_Nu.Location = new System.Drawing.Point(362, 454);
+            this.rb_Nu.Location = new System.Drawing.Point(383, 469);
             this.rb_Nu.Name = "rb_Nu";
             this.rb_Nu.Size = new System.Drawing.Size(57, 30);
-            this.rb_Nu.TabIndex = 7;
+            this.rb_Nu.TabIndex = 10;
             this.rb_Nu.TabStop = true;
             this.rb_Nu.Text = "Nữ";
             this.rb_Nu.UseVisualStyleBackColor = true;
             // 
             // btn_CapNhat
             // 
-            this.btn_CapNhat.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_CapNhat.Location = new System.Drawing.Point(52, 524);
+            this.btn_CapNhat.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_CapNhat.Location = new System.Drawing.Point(65, 547);
             this.btn_CapNhat.Name = "btn_CapNhat";
-            this.btn_CapNhat.Size = new System.Drawing.Size(209, 50);
-            this.btn_CapNhat.TabIndex = 8;
+            this.btn_CapNhat.Size = new System.Drawing.Size(200, 52);
+            this.btn_CapNhat.TabIndex = 11;
             this.btn_CapNhat.Text = "Cập nhật thông tin";
             this.btn_CapNhat.UseVisualStyleBackColor = true;
             this.btn_CapNhat.Click += new System.EventHandler(this.btn_CapNhat_Click);
             // 
             // btn_Huy
             // 
-            this.btn_Huy.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Huy.Location = new System.Drawing.Point(362, 524);
+            this.btn_Huy.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_Huy.Location = new System.Drawing.Point(373, 547);
             this.btn_Huy.Name = "btn_Huy";
-            this.btn_Huy.Size = new System.Drawing.Size(104, 50);
-            this.btn_Huy.TabIndex = 9;
+            this.btn_Huy.Size = new System.Drawing.Size(85, 52);
+            this.btn_Huy.TabIndex = 12;
             this.btn_Huy.Text = "Hủy";
             this.btn_Huy.UseVisualStyleBackColor = true;
             this.btn_Huy.Click += new System.EventHandler(this.btn_Huy_Click);
             // 
             // ChinhSuaThongTinKH
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(47)))));
             this.ClientSize = new System.Drawing.Size(565, 619);
             this.Controls.Add(this.btn_Huy);
             this.Controls.Add(this.btn_CapNhat);
@@ -195,8 +192,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ChinhSuaThongTinKH";
-            this.Text = "Chỉnh sửa thông tin khách hàng";
+            this.Text = "ChinhSuaThongTinKH";
             this.Load += new System.EventHandler(this.ChinhSuaThongTinKH_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -15,114 +15,206 @@ namespace BTL_WINFORM_2024
     public partial class ThemHoaDon : Form
     {
         bool isValid_Name = false, isValid_Phone = false;
+        int SoHD;
         ErrorProvider errorProvider = new ErrorProvider();
         string connectionString = ConfigurationManager.ConnectionStrings["ConnectionStringBTL"].ConnectionString;
         public ThemHoaDon()
         {
             InitializeComponent();
-        }
-
-        private void ThemHoaDon_Load(object sender, EventArgs e)
-        {
-            btn_ThemMH.Enabled = false;
+            LoadDataIntoCBLH();
             bt_create_now.Enabled = false;
-            cmb_LoaiHang.SelectedIndex = 0;
-            cmb_MatHang.Enabled = false;
-            tb_Quantity.Enabled = false;
+            btn_ThemMH.Enabled = false;
             rdb_Nam.Checked = true;
-            rdb_Nu.Checked = false;
         }
-
-        private void tb_name_TextChanged(object sender, EventArgs e)
+        private void MoNut()
         {
+            bool ten = !string.IsNullOrEmpty(tb_name.Text);
+            bool diachi = !string.IsNullOrEmpty(tb_address.Text);
+            bool sdt = !string.IsNullOrEmpty(tb_Phone.Text);
+            bt_create_now.Enabled = ten && diachi && sdt;
+        }
+        private void MoNutThem()
+        {
+            bool loai = CB_LoaiHang.SelectedIndex != -1;
+            bool mh = CB_MatHang.SelectedIndex != -1;
+            bool soluong = !string.IsNullOrEmpty(tb_Quantity.Text);
+            btn_ThemMH.Enabled = loai && mh && soluong;
 
         }
-        private bool isValid_CreateBill()
+        private void LoadDataIntoCBLH()
         {
-            return isValid_Phone && isValid_ListProduct() && isValid_Name;
-        }
-        private bool isValid_ListProduct()
-        {
-            return listView_MH.Items.Count > 0;
-        }
-        private void btn_ThemMH_Click(object sender, EventArgs e)
-        {
-            // Lấy thông tin từ các TextBox
-            string name = tb_name.Text;
-            string address = tb_address.Text;
-            string phone = tb_Phone.Text;
-
-            // Tạo một chuỗi để chứa thông tin từ ListView
-            StringBuilder productList = new StringBuilder();
-
-            // Duyệt qua từng mục trong ListView
-            foreach (ListViewItem item in listView_MH.Items)
-            {
-                // Lấy tên mặt hàng từ mục hiện tại và thêm vào chuỗi
-                productList.AppendLine(item.Text);
-            }
-
-            // Đưa thông tin vào RichTextBox
-            rtb_Bill.AppendText($"--------------- HÓA ĐƠN------------------:\n");
-            rtb_Bill.AppendText($"Tên khách hàng: {name}\n");
-            rtb_Bill.AppendText($"Địa chỉ: {address}\n");
-            rtb_Bill.AppendText($"Số điện thoại: {phone}\n");
-            rtb_Bill.AppendText($"Danh sách mặt hàng:\n{productList.ToString()}");
-
-            bt_create_now.Enabled = true;
-        }
-
-        private void cmb_LoaiHang_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            // Nếu click index = 1 -> Loai hàng
-            //Lấy trong database tại bảng tblHangHoa tìm lấy các loại hàng có mã là LH001 -> đưa ra danh sách đưa vào combobox
-            //2-> LH002
-            //3-> LH003
-            // rồi đửa vào comboBox
-            //cmb_MatHang.
-            // CLEAR CÁC THÔNG TIN BÊN TRONG COMBOBOX TRƯỚC KHI VÀO 
-            cmb_MatHang.Items.Clear();
-            tb_Quantity.Enabled = true;
-            tb_Quantity.Text = "1";
-            cmb_MatHang.Enabled = true;
-            int index = cmb_LoaiHang.SelectedIndex;
-            string sMaLH = "";
-            string query = "Select_Name_Product";
-            
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                using (SqlCommand cmd = conn.CreateCommand())
+                string querysl = "SELECT sTenHH FROM tblLoaiHangHoa ";
+                using (SqlCommand cmd = new SqlCommand(querysl, conn))
                 {
-                    cmd.CommandText = query;
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    if (index == 0) sMaLH = "LH001";
-                    else if (index == 1) sMaLH = "LH002";
-                    else if (index == 2) sMaLH = "LH003";
-                    else return;
-                    cmd.Parameters.AddWithValue("@sMaLH", sMaLH);
-                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    using (SqlDataReader dr = cmd.ExecuteReader())
                     {
-                        while (reader.Read())
+                        while (dr.Read())
                         {
-                            cmb_MatHang.Items.Add(reader["sTenMH"].ToString() );
+                            CB_LoaiHang.Items.Add(dr["sTenHH"].ToString());
                         }
                     }
                 }
             }
         }
-
-        private void cmb_MatHang_SelectedIndexChanged(object sender, EventArgs e)
+        private void LoadDataIntoCBMatHang(string maLH)
         {
-            // Click vào cái nào cái đấy sẽ lấy thông tin đưa vào listView 
-            string selected_item = cmb_MatHang.SelectedItem.ToString();
-            // Đưa vào listView ?
-            ListViewItem item = new ListViewItem(selected_item + ", Số lượng: " + tb_Quantity.Text);
-            listView_MH.Items.Add(item);
-            if (isValid_CreateBill()) btn_ThemMH.Enabled = true;
-            else btn_ThemMH.Enabled = false;
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string querysl = "SELECT sTenMH FROM tblHangHoa WHERE sMaLH = @maLH ";
+                using (SqlCommand cmd = new SqlCommand(querysl, conn))
+                {
+                    cmd.Parameters.AddWithValue("@maLH", maLH);
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        while (dr.Read())
+                        {
+                            CB_MatHang.Items.Add(dr["sTenMH"].ToString());
+                        }
+                    }
+                }
+            }
+
+        }
+        private string LayMaLHtuTen(string TenLH)
+        {
+            string MaLH;
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT sMaLH FROM tblLoaiHangHoa WHERE sTenHH = @ten";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.Clear();
+                    cmd.Parameters.AddWithValue("@ten", TenLH);
+                    object id = cmd.ExecuteScalar();
+                    MaLH = id.ToString();
+                }
+
+            }
+            return MaLH;
+        }
+        private string LayMaMHtuTen(string TenMH)
+        {
+            string MaMH;
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT sMaMH FROM tblHangHoa WHERE sTenMH = @ma";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@ma", TenMH);
+                    object id = cmd.ExecuteScalar();
+                    MaMH = id.ToString();
+                }
+            }
+            return MaMH;
+        }
+        private void LoadDataintoDTGR(int soHD)
+        {
+            string query = "XemCTDH";
+            DataTable dt = new DataTable();
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Clear();
+                    cmd.Parameters.AddWithValue("@MaHD", soHD);
+                    using (SqlDataAdapter da = new SqlDataAdapter())
+                    {
+                        da.SelectCommand = cmd;
+                        da.Fill(dt);
+                    }
+                }
+            }
+            DTGR_BangHD.DataSource = dt;
+            DTGR_BangHD.Columns[0].HeaderText = "Mặt hàng";
+            DTGR_BangHD.Columns[1].HeaderText = "Số lượng";
+            DTGR_BangHD.Columns[2].HeaderText = "Giá bán";
+            DTGR_BangHD.Columns[3].HeaderText = "Thành Tiền";
+
+        }
+        private void LayGiamGia(int soHD)
+        {
+            string query = "SELECT TOP 1 fGiamGia FROM tblCTHoaDon WHERE iSoHD = @Ma";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Ma", soHD);
+                    object result = cmd.ExecuteScalar();
+                    string magiamgia = result.ToString();
+                    TB_GiamGia.Text = magiamgia;
+
+                }
+            }
+        }
+        private void TinhTongTien()
+        {
+            double total = 0;
+            double sale = Convert.ToDouble(TB_GiamGia.Text);
+            foreach (DataGridViewRow row in DTGR_BangHD.Rows)
+            {
+                object cellValue = row.Cells["ThanhTien"].Value;
+                if (cellValue != null && cellValue.ToString() != "")
+                {
+                    double number;
+                    if (double.TryParse(cellValue.ToString(), out number))
+                    {
+                        total += number;
+
+                    }
+                }
+            }
+            if (sale > 0)
+            {
+                total = total * (1 - sale);
+
+            }
+            TB_Tong.Text = total.ToString();
         }
 
+
+
+        private void ThemHoaDon_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void tb_name_TextChanged(object sender, EventArgs e)
+        {
+            MoNut();
+        }
+       
+        private void btn_ThemMH_Click(object sender, EventArgs e)
+        {
+            string maSP = LayMaMHtuTen(CB_MatHang.SelectedItem.ToString());
+            int soluong = Convert.ToInt32(tb_Quantity.Text);
+            string query = "NhapCTHD";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@maSP", maSP);
+                    cmd.Parameters.AddWithValue("@iSoHD", SoHD);
+                    cmd.Parameters.AddWithValue("@Soluong", soluong);
+                    cmd.ExecuteNonQuery();
+
+                }
+            }
+            LoadDataintoDTGR(SoHD);
+            LayGiamGia(SoHD);
+            TinhTongTien();
+        }
+
+       
         private void tb_Phone_Validating(object sender, CancelEventArgs e)
         {
             string phone = tb_Phone.Text;
@@ -133,11 +225,11 @@ namespace BTL_WINFORM_2024
                 isValid = false;
                 errorProvider.SetError(tb_Phone, "Số điện thoại chỉ được chứa số!");
             }
-            // Kiểm tra xem chuỗi có đúng 12 ký tự không
-            else if (phone.Length != 12)
+            // Kiểm tra xem chuỗi có đúng 12 hoặc ít hơn 12 ký tự không
+            else if (phone.Length < 10 || phone.Length > 10)
             {
                 isValid = false;
-                errorProvider.SetError(tb_Phone, "Số điện thoại phải có 12 số tới 14 số !");
+                errorProvider.SetError(tb_Phone, "Số điện thoại phải có 10 số");
             }
 
             if (!isValid)
@@ -150,44 +242,26 @@ namespace BTL_WINFORM_2024
                 isValid_Phone = true;
                 errorProvider.SetError(tb_Phone, "");
             }
-            if (isValid_CreateBill()) btn_ThemMH.Enabled = true;
-            else btn_ThemMH.Enabled = false;
+            
         }
 
         private void bt_create_now_Click(object sender, EventArgs e)
         {
-            string sTTDonHang = "";
-
-            // Duyệt qua từng mục trong ListView để lấy thông tin và nối vào chuỗi sTTDonHang
-            foreach (ListViewItem item in listView_MH.Items)
-            {
-                if (sTTDonHang == "")
-                {
-                    sTTDonHang = item.Text;
-                }
-                else sTTDonHang += "; "+ item.Text; // Nối thông tin vào chuỗi sTTDonHang
-            }
-            Console.WriteLine(sTTDonHang);
-
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 // Mở kết nối
                 connection.Open();
 
                 // Lấy số hóa đơn mới từ cơ sở dữ liệu
-                int iSoHD = LaySoHoaDonMoi();
-                Console.WriteLine(sTTDonHang);
-                Console.WriteLine(iSoHD);
-
+                SoHD = LaySoHoaDonMoi();
                 // Tạo đối tượng SqlCommand để thực thi stored procedure
                 using (SqlCommand command = new SqlCommand("Create_Bill_For_Customer", connection))
                 {
                     command.CommandType = System.Data.CommandType.StoredProcedure;
 
                     // Thêm các tham số vào stored procedure
-                    command.Parameters.AddWithValue("@iSoHD", iSoHD); 
+                    command.Parameters.AddWithValue("@iSoHD", SoHD);
                     command.Parameters.AddWithValue("@sTenKH", tb_name.Text);
-                    command.Parameters.AddWithValue("@sTTDonHang", sTTDonHang); // Truyền chuỗi sTTDonHang vào tham số
                     command.Parameters.AddWithValue("@sDiaChi", tb_address.Text);
                     command.Parameters.AddWithValue("@sSoDT", tb_Phone.Text);
                     command.Parameters.AddWithValue("@bGioiTinh", rdb_Nam.Checked ? 1 : 0);
@@ -198,7 +272,8 @@ namespace BTL_WINFORM_2024
                     if (isSuccess)
                     {
                         MessageBox.Show("Thêm hóa đơn thành công!");
-                    }else
+                    }
+                    else
                     {
                         MessageBox.Show("Có lỗi xảy ra khi thêm hóa đơn.");
                     }
@@ -207,7 +282,7 @@ namespace BTL_WINFORM_2024
                 }
             }
         }
-        public int LaySoHoaDonMoi( )
+        public int LaySoHoaDonMoi()
         {
             int iSoHD = 0;
 
@@ -225,56 +300,67 @@ namespace BTL_WINFORM_2024
             }
             return iSoHD;
         }
-        // Hàm để lấy số hóa đơn mới từ cơ sở dữ liệu
-        private int LaySoHoaDonMoi(SqlConnection connection)
+
+        private void tb_name_TextChanged_1(object sender, EventArgs e)
         {
-            int iSoHD = 0;
-            using (SqlCommand command = new SqlCommand("SELECT MAX(iSoHD) FROM TenBangHoaDon", connection))
+            MoNut();
+        }
+
+        private void tb_Phone_TextChanged(object sender, EventArgs e)
+        {
+            MoNut();
+        }
+
+        private void CB_LoaiHang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string maLH = LayMaLHtuTen(CB_LoaiHang.SelectedItem.ToString());
+            LoadDataIntoCBMatHang(maLH);
+            MoNutThem();
+            MoNutThem();
+        }
+
+        private void CB_MatHang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MoNutThem();
+        }
+
+        private void tb_Quantity_TextChanged(object sender, EventArgs e)
+        {
+            MoNutThem();
+        }
+
+        private void BT_Xoa_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa thông tin hiện tại không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
             {
-                object result = command.ExecuteScalar();
-                if (result != DBNull.Value)
+                using (SqlConnection conn = new SqlConnection(connectionString))
                 {
-                    iSoHD = Convert.ToInt32(result) + 1;
+                    conn.Open();
+                    string query = "XoaHD";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@MaHD", SoHD);
+                        int i = cmd.ExecuteNonQuery();
+                        if (i > 0)
+                        {
+                            MessageBox.Show("Xóa đơn hàng thành công");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Xóa không thành công");
+                        }
+                    }
                 }
             }
-            return iSoHD;
+
         }
 
-
-
-        private void bt_Delete_infor_Click(object sender, EventArgs e)
+        private void BT_Xuat_Click(object sender, EventArgs e)
         {
-            // Hiển thị thông báo xác nhận xóa thông tin hiện tại. xóa các textbox , xóa các listView, xóa tt bên trong richTextBox.
-            // Hiển thị hộp thoại xác nhận
-            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa thông tin hiện tại không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            // Nếu người dùng chọn Yes
-            if (result == DialogResult.Yes)
-            {
-                // Xóa các TextBox
-                tb_name.Text = "...";
-                tb_address.Text = "...";
-                tb_Phone.Text = "...";
-
-                // Xóa các mục trong ListView
-                listView_MH.Items.Clear();
-
-                // Xóa thông tin trong RichTextBox
-                rtb_Bill.Clear();
-                bt_create_now.Enabled = false;
-                btn_ThemMH.Enabled = false;
-            }
-        }
-
-        private void bt_Cancel_Create_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Hủy tạo đơn ?", "Xác nhận hủy", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            // Nếu người dùng chọn Yes
-            if (result == DialogResult.Yes)
-            {
-                this.Close();
-            }
+            XuatHoaDon hd = new XuatHoaDon(SoHD);
+            hd.Show();
         }
 
         private void tb_name_Validating(object sender, CancelEventArgs e)
@@ -300,8 +386,7 @@ namespace BTL_WINFORM_2024
                     isValid_Name = true;
                 }
             }
-            if (isValid_CreateBill()) btn_ThemMH.Enabled = true;
-            else btn_ThemMH.Enabled = false;
+           
         }
 
     }
